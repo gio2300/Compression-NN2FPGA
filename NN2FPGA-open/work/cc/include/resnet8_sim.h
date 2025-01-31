@@ -16,39 +16,58 @@ std::chrono::duration<double> networkSim(
 	const unsigned int n_inp,
 	const unsigned int n_out,
 	const t_in_mem* inp_1,
-	t_out_mem* o_outp1
-	 t_net_const_13_st c_net_const_13[9][12][4] //aggiunta
+	t_out_mem* o_outp1,
+	 uint8_t* buffer //
 ) {
-for (auto s_ch = 0; (s_ch < 12); s_ch++) {  //
-      for (auto s_index = 0; s_index < 9; s_index++) {  //
-        for (auto s_ops = 0; s_ops < 4; s_ops++) {  //
-          c_net_const_13[s_index][s_ch][s_ops] = 1; //
-        }
-      }
-    }
+t_weights_st *c_weights;
+const int c_first_weights_dim = 386;
 
-	
-	t_weights_st *c_weights;
-	posix_memalign((void**)&c_weights, 4096,78052 * sizeof(t_weights_st));
-	std::ifstream file_weights(prj_root + "npy/resnet8_weights.bin", std::ios::binary);
+        const int c_weights_dim = 78006;
 
-	file_weights.read(reinterpret_cast<char*>(c_weights), 78052 * sizeof(t_weights_st));
-	file_weights.close();
+        const int c_second_weights_dim = 77620;
+       // uint8_t* buffer;
+       posix_memalign((void**)&buffer,4096, 386 * sizeof(t_weights_st));
+        posix_memalign((void**)&c_weights, 4096,77620 * sizeof(t_weights_st));
+std::ifstream file_weights("npy/gzipc_resnet8432.bin", std::ios::binary);
+
+	auto i=0;
+
+//file_weights.seekg(0, std::ios::end);
+//std::streamsize file_size = file_weights.tellg();
+//file_weights.seekg(0, std::ios::beg);
+//std::cout << "Dimensione del file: " << file_size << " byte" << std::endl;
+//int a=0;
+
+    file_weights.read(reinterpret_cast<char*>(buffer), 386 * sizeof(t_weights_st));
 
 
 
+  //  int bufferCount = 0;
+ //   for (int i = 0; i < 382; ++i) {
+       // if (buffer[i] != 0) {
+   //         bufferCount++;
+       // }
+   // }
+  //  std::cout << "Numero di dati non nulli nel buffer: " << bufferCount << std::endl;
+file_weights.close();
+std::ifstream file_weightss(prj_root + "npy/resnet8_weights.bin", std::ios::binary);
+// Salto i primi 432 pesi
+file_weightss.seekg(432 * sizeof(t_weights_st), std::ios::beg);
+    file_weightss.read(reinterpret_cast<char*>(c_weights), 77620 * sizeof(t_weights_st));
+        file_weightss.close();
 
 
-	hls::stream<t_weights_stream> c_weights_stream;
-	hls::stream<t_inp_1> c_inp_1_stream;
-	hls::stream<t_o_outp1> c_outp1_stream;
-	nn2fpga::mm2s <
+hls::stream<t_weights_stream> c_weights_stream;
+        hls::stream<t_inp_1> c_inp_1_stream;
+        hls::stream<t_o_outp1> c_outp1_stream;
+
+		nn2fpga::mm2s <
 		t_weights_st,
 		t_weights_stream
 	> (
-		c_weights,
-		c_weights_dim,
-		c_weights_stream
+		c_weights,  
+        c_second_weights_dim,//
+ 	c_weights_stream
 	);
 
 	nn2fpga::mm2s <
@@ -66,7 +85,8 @@ for (auto s_ch = 0; (s_ch < 12); s_ch++) {  //
 		c_inp_1_stream,
 		c_weights_stream,
 		c_outp1_stream,
-		c_net_const_13 //aggiunta
+	buffer //
+	//	weights_ddr
 	);
 
 	auto end = std::chrono::high_resolution_clock::now();
@@ -81,7 +101,9 @@ for (auto s_ch = 0; (s_ch < 12); s_ch++) {  //
 	);
 
 	free(c_weights);
-	return (end - start);
-}
+//	free(c_weights_initial);//
+free(buffer);
+    return (end - start);
 
+}
 #endif
