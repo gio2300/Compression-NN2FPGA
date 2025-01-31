@@ -1,0 +1,32 @@
+# Ignora tutto nella cartella work/
+work/*
+
+# Ma non ignorare la cartella cc e il suo contenuto
+!work/cc/
+!work/cc/**
+
+# Altre regole già presenti
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+build/
+dist/
+*.egg-info/
+.Python
+
+# Esempi di altre regole già presenti
+tmp/
+logs/
+*.o
+.vscode/c_cpp_properties.json
+
+# Ignora le directory specifiche di Vitis
+nn2fpga/_x*/
+nn2fpga/build_dir*/
+nn2fpga/xilinx_*
+nn2fpga/.run/
+nn2fpga/.ipcache/
+nn2fpga/Vitis_Libraries/
+
