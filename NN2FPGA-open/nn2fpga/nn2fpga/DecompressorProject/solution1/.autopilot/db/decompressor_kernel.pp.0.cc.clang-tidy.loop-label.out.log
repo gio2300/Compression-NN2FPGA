@@ -1,0 +1,283 @@
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:1444:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:1444:7: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:2418:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:2418:5: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:2432:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:2432:5: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:2446:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:2446:5: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:4075:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:4075:7: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26070:5: warning: Added loop label VITIS_LOOP_127_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < N; ++i) {
+    ^~~
+    VITIS_LOOP_127_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26070:5: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26086:5: warning: Added loop label VITIS_LOOP_143_1:   [xilinx-label-all-loops]
+    for (size_t i = 0; i < N; ++i) {
+    ^~~
+    VITIS_LOOP_143_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26086:5: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26102:75: warning: Added loop label VITIS_LOOP_169_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator ++() { pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                          ^~~
+                                                                          VITIS_LOOP_169_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26102:75: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26107:75: warning: Added loop label VITIS_LOOP_170_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator --() { pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                          ^~~
+                                                                          VITIS_LOOP_170_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26107:75: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26116:106: warning: Added loop label VITIS_LOOP_198_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator +=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                         ^~~
+                                                                                                         VITIS_LOOP_198_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26116:106: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26121:106: warning: Added loop label VITIS_LOOP_199_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator -=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                         ^~~
+                                                                                                         VITIS_LOOP_199_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26121:106: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26126:106: warning: Added loop label VITIS_LOOP_200_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator *=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                         ^~~
+                                                                                                         VITIS_LOOP_200_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26126:106: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26131:106: warning: Added loop label VITIS_LOOP_201_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator /=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                         ^~~
+                                                                                                         VITIS_LOOP_201_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26131:106: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26136:106: warning: Added loop label VITIS_LOOP_202_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator %=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                         ^~~
+                                                                                                         VITIS_LOOP_202_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26136:106: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26141:106: warning: Added loop label VITIS_LOOP_203_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator &=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                         ^~~
+                                                                                                         VITIS_LOOP_203_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26141:106: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26146:106: warning: Added loop label VITIS_LOOP_204_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator |=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                         ^~~
+                                                                                                         VITIS_LOOP_204_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26146:106: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26151:106: warning: Added loop label VITIS_LOOP_205_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator ^=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                         ^~~
+                                                                                                         VITIS_LOOP_205_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26151:106: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26156:107: warning: Added loop label VITIS_LOOP_206_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator <<=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                          ^~~
+                                                                                                          VITIS_LOOP_206_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26156:107: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26161:107: warning: Added loop label VITIS_LOOP_207_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) vector &operator >>=(const vector &rhs) { pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                          ^~~
+                                                                                                          VITIS_LOOP_207_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26161:107: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26167:91: warning: Added loop label VITIS_LOOP_222_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) T reduce_add() const { pragma(); T res = data[0]; for (size_t i = 1; i < N; ++i) {
+                                                                                          ^~~
+                                                                                          VITIS_LOOP_222_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26167:91: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26172:92: warning: Added loop label VITIS_LOOP_223_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) T reduce_mult() const { pragma(); T res = data[0]; for (size_t i = 1; i < N; ++i) {
+                                                                                           ^~~
+                                                                                           VITIS_LOOP_223_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26172:92: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26177:91: warning: Added loop label VITIS_LOOP_224_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) T reduce_and() const { pragma(); T res = data[0]; for (size_t i = 1; i < N; ++i) {
+                                                                                          ^~~
+                                                                                          VITIS_LOOP_224_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26177:91: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26182:90: warning: Added loop label VITIS_LOOP_225_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) T reduce_or() const { pragma(); T res = data[0]; for (size_t i = 1; i < N; ++i) {
+                                                                                         ^~~
+                                                                                         VITIS_LOOP_225_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26182:90: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26187:91: warning: Added loop label VITIS_LOOP_226_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) T reduce_xor() const { pragma(); T res = data[0]; for (size_t i = 1; i < N; ++i) {
+                                                                                          ^~~
+                                                                                          VITIS_LOOP_226_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26187:91: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26193:132: warning: Added loop label VITIS_LOOP_256_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) friend bool operator <(const vector &lhs, const vector &rhs) { lhs.pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                                                   ^~~
+                                                                                                                                   VITIS_LOOP_256_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26193:132: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26198:133: warning: Added loop label VITIS_LOOP_257_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) friend bool operator <=(const vector &lhs, const vector &rhs) { lhs.pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                                                    ^~~
+                                                                                                                                    VITIS_LOOP_257_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26198:133: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26203:133: warning: Added loop label VITIS_LOOP_258_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) friend bool operator ==(const vector &lhs, const vector &rhs) { lhs.pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                                                    ^~~
+                                                                                                                                    VITIS_LOOP_258_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26203:133: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26208:133: warning: Added loop label VITIS_LOOP_259_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) friend bool operator !=(const vector &lhs, const vector &rhs) { lhs.pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                                                    ^~~
+                                                                                                                                    VITIS_LOOP_259_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26208:133: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26213:133: warning: Added loop label VITIS_LOOP_260_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) friend bool operator >=(const vector &lhs, const vector &rhs) { lhs.pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                                                    ^~~
+                                                                                                                                    VITIS_LOOP_260_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26213:133: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26218:132: warning: Added loop label VITIS_LOOP_261_1:   [xilinx-label-all-loops]
+  inline __attribute__((always_inline)) friend bool operator >(const vector &lhs, const vector &rhs) { lhs.pragma(); rhs.pragma(); for (size_t i = 0; i < N; ++i) {
+                                                                                                                                   ^~~
+                                                                                                                                   VITIS_LOOP_261_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26218:132: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26260:2: warning: Added loop label VITIS_LOOP_43_1:   [xilinx-label-all-loops]
+ while (bits_cntr < 32 && (done == false)) {
+ ^~~~~
+ VITIS_LOOP_43_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26260:2: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26554:2: warning: Added loop label VITIS_LOOP_337_1:   [xilinx-label-all-loops]
+ for (ap_uint<5> i = 0; i < 15; i++) {
+ ^~~
+ VITIS_LOOP_337_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26554:2: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26562:9: warning: Added loop label VITIS_LOOP_345_2:   [xilinx-label-all-loops]
+        for (ap_uint<2> i = 0; i < 2; i++) {
+        ^~~
+        VITIS_LOOP_345_2: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26562:9: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26688:2: warning: Added loop label VITIS_LOOP_471_1:   [xilinx-label-all-loops]
+ for (ap_uint<5> i = 0; i < 7; i++) {
+ ^~~
+ VITIS_LOOP_471_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26688:2: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26904:9: warning: Added loop label VITIS_LOOP_702_1:   [xilinx-label-all-loops]
+        while (huff & incr) incr >>= 1;
+        ^~~~~
+        VITIS_LOOP_702_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:26904:9: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27083:57: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = dynamic_lens type = ram_1p impl = lutram
+                                                        ^
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27107:52: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = bl1Code type = ram_1p impl = lutram
+                                                   ^
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27109:52: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = bl2Code type = ram_1p impl = lutram
+                                                   ^
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27111:52: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = bl3Code type = ram_1p impl = lutram
+                                                   ^
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27113:52: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = bl4Code type = ram_1p impl = lutram
+                                                   ^
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27115:52: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = bl5Code type = ram_1p impl = lutram
+                                                   ^
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27117:52: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = bl6Code type = ram_1p impl = lutram
+                                                   ^
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27119:52: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = bl7Code type = ram_1p impl = lutram
+                                                   ^
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27121:52: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = bl8Code type = ram_1p impl = lutram
+                                                   ^
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27123:52: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = bl9Code type = ram_1p impl = lutram
+                                                   ^
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27125:53: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = bl10Code type = ram_1p impl = lutram
+                                                    ^
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27127:53: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = bl11Code type = ram_1p impl = lutram
+                                                    ^
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27129:53: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = bl12Code type = ram_1p impl = lutram
+                                                    ^
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27131:53: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = bl13Code type = ram_1p impl = lutram
+                                                    ^
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27133:53: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = bl14Code type = ram_1p impl = lutram
+                                                    ^
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27135:53: error: Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = bl15Code type = ram_1p impl = lutram
+                                                    ^
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27197:9: warning: Added loop label VITIS_LOOP_1009_1:   [xilinx-label-all-loops]
+        while (!blocks_processed && (done == false)) {
+        ^~~~~
+        VITIS_LOOP_1009_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27197:9: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27269:21: warning: Added loop label VITIS_LOOP_1081_2:   [xilinx-label-all-loops]
+                    while (dynamic_curInSize < 19) dynamic_lens[order[dynamic_curInSize++]] = 0;
+                    ^~~~~
+                    VITIS_LOOP_1081_2: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27269:21: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27309:21: warning: Added loop label VITIS_LOOP_1130_3:   [xilinx-label-all-loops]
+                    for (ap_uint<9> i = 0; i < 288; i++) {
+                    ^~~
+                    VITIS_LOOP_1130_3: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27309:21: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27401:5: warning: Added loop label VITIS_LOOP_1235_1:   [xilinx-label-all-loops]
+    while (done == false) {
+    ^~~~~
+    VITIS_LOOP_1235_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27401:5: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27481:9: warning: Added loop label VITIS_LOOP_1315_2:   [xilinx-label-all-loops]
+        while (!blocks_processed && (done == false)) {
+        ^~~~~
+        VITIS_LOOP_1315_2: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27481:9: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27548:21: warning: Added loop label VITIS_LOOP_1382_3:   [xilinx-label-all-loops]
+                    while (dynamic_curInSize < 19) dynamic_lens[order[dynamic_curInSize++]] = 0;
+                    ^~~~~
+                    VITIS_LOOP_1382_3: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:27548:21: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:38698:5: warning: Added loop label VITIS_LOOP_35_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < (1024 / 32); i++) {
+    ^~~
+    VITIS_LOOP_35_1: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:38698:5: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:38700:9: warning: Added loop label VITIS_LOOP_37_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < 1024 / 16; j++) {
+        ^~~
+        VITIS_LOOP_37_2: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:38700:9: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:38702:10: warning: Added loop label VITIS_LOOP_39_3:   [xilinx-label-all-loops]
+         while (!huffman_input_stream.empty()) {
+         ^~~~~
+         VITIS_LOOP_39_3: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:38702:10: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:38727:9: warning: Added loop label VITIS_LOOP_64_4:   [xilinx-label-all-loops]
+        while (true) {
+        ^~~~~
+        VITIS_LOOP_64_4: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:38727:9: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:38735:9: warning: Added loop label VITIS_LOOP_72_5:   [xilinx-label-all-loops]
+        for (int i = 0; i < 4; i++) {
+        ^~~
+        VITIS_LOOP_72_5: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:38735:9: note: FIX-IT applied suggested code changes
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:38750:9: warning: Added loop label VITIS_LOOP_87_6:   [xilinx-label-all-loops]
+        while (!lz77_output_stream.empty()) {
+        ^~~~~
+        VITIS_LOOP_87_6: 
+/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc:38750:9: note: FIX-IT applied suggested code changes

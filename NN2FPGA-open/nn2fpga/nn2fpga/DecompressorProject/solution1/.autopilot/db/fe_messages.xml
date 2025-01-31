@@ -1,0 +1,441 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:746:43" msg_body="unused parameter 'curr_table'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:104:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pragma" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=this" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:128:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vector&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:144:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vector&lt;T, N&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:169:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator++" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:170:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator--" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:198:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator+=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:199:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator-=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:200:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator*=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:201:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator/=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:202:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator%=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:203:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator&amp;=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:204:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator|=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:205:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator^=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:206:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator&lt;&lt;=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:207:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator&gt;&gt;=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:222:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduce_add" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:223:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduce_mult" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:224:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduce_and" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:225:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduce_or" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:226:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduce_xor" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:256:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator&lt;" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:257:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator&lt;=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:258:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator==" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:259:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator!=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:260:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator&gt;=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h:261:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:42:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="loadBitStream" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:72:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="discardBitStreamLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:79:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reg" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:80:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reg" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port = return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:81:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reg" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:94:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanBytegenStatic" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:110:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanBytegenStatic" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:177:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanBytegen" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:197:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanBytegen" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:305:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanBytegenLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = current_bits complete dim = 0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:307:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanBytegenLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = symbol complete dim = 0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:311:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanBytegenLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = lBitBuffer complete dim = 0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:332:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanBytegenLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:335:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanBytegenLL" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:338:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanBytegenLL" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:346:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanBytegenLL" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:461:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="byteGen" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = symbol dim = 1 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:470:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="byteGen" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:472:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="byteGen" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:556:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:584:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = count" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:587:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = offs" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:590:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaOptions="false inter variable = codeBuffer" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:603:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:604:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaOptions="FACTOR = 2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:614:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:623:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:628:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaOptions="false inter variable = codeBuffer" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:629:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:630:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaOptions="FACTOR = 2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:685:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaOptions="false inter variable = nptr" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:686:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaOptions="false inter variable = nptr_extra" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:687:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:688:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaOptions="FACTOR = 2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:732:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:733:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn" ARG_PragmaIsValid="1" ARG_PragmaOptions="FACTOR = 2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:771:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn_new" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = count" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:775:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn_new" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:782:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn_new" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = firstCode" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:786:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn_new" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:795:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="code_generator_array_dyn_new" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:895:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = dynamic_lens type = ram_1p impl = lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:903:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = codeOffsets dim = 1 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:919:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl1Code type = ram_1p impl = lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:920:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl1Code complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:921:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl2Code type = ram_1p impl = lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:922:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl2Code complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:923:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl3Code type = ram_1p impl = lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:924:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl3Code complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:925:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl4Code type = ram_1p impl = lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:926:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl4Code complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:927:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl5Code type = ram_1p impl = lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:928:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl5Code complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:929:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl6Code type = ram_1p impl = lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:930:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl6Code complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:931:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl7Code type = ram_1p impl = lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:932:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl7Code complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:933:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl8Code type = ram_1p impl = lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:934:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl8Code complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:935:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl9Code type = ram_1p impl = lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:936:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl9Code complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:937:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl10Code type = ram_1p impl = lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:938:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl10Code complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:939:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl11Code type = ram_1p impl = lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:940:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl11Code complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:941:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl12Code type = ram_1p impl = lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:942:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl12Code complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:943:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl13Code type = ram_1p impl = lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:944:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl13Code complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:945:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl14Code type = ram_1p impl = lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:946:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl14Code complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:947:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl15Code type = ram_1p impl = lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:948:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = bl15Code complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:988:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1036:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1070:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 2" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1131:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoderLL" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1299:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoder" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1339:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoder" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1371:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoder" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1393:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="huffmanDecoder" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/csynth.tcl:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="decompressor_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=decompressor_kernel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="decompressor_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=decompressor_kernel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:334:9" msg_body="Loop 'comparator' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="comparator"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:337:20" msg_body="Loop 'VITIS_LOOP_337_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_337_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:345:27" msg_body="Loop 'VITIS_LOOP_345_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_345_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:471:20" msg_body="Loop 'VITIS_LOOP_471_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_471_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:302:0" msg_body="Unrolling loop 'comparator' (/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:334:9) in function 'xf::compression::details::huffmanBytegenLL' completely with a factor of 2">
+        <args Factor="2" LoopLoc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:334:9" LoopName="comparator"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:302:0" msg_body="Unrolling loop 'VITIS_LOOP_337_1' (/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:337:20) in function 'xf::compression::details::huffmanBytegenLL' completely with a factor of 15">
+        <args Factor="15" LoopLoc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:337:20" LoopName="VITIS_LOOP_337_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:302:0" msg_body="Unrolling loop 'VITIS_LOOP_345_2' (/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:345:27) in function 'xf::compression::details::huffmanBytegenLL' completely with a factor of 2">
+        <args Factor="2" LoopLoc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:345:27" LoopName="VITIS_LOOP_345_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:454:0" msg_body="Unrolling loop 'VITIS_LOOP_471_1' (/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:471:20) in function 'xf::compression::details::byteGen' completely with a factor of 7">
+        <args Factor="7" LoopLoc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:471:20" LoopName="VITIS_LOOP_471_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:454:0" msg_body="Inlining function 'xf::compression::details::loadBitStreamLL(ap_uint&lt;32&gt;&amp;, ap_uint&lt;6&gt;&amp;, hls::stream&lt;ap_uint&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, bool&amp;)' into 'xf::compression::details::byteGen(ap_uint&lt;32&gt;&amp;, ap_uint&lt;6&gt;&amp;, ap_uint&lt;16&gt;*, ap_uint&lt;9&gt;*, ap_uint&lt;9&gt;*, ap_uint&lt;9&gt;*, ap_uint&lt;9&gt;*, ap_uint&lt;9&gt;*, ap_uint&lt;9&gt;*, ap_uint&lt;9&gt;*, ap_uint&lt;5&gt;*, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;16&gt;, 0&gt;&amp;, ap_uint&lt;9&gt;, ap_uint&lt;9&gt;, bool&amp;)'">
+        <args Callee="xf::compression::details::loadBitStreamLL(ap_uint&lt;32&gt;&amp;, ap_uint&lt;6&gt;&amp;, hls::stream&lt;ap_uint&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, bool&amp;)" Callee-DebugLoc="File /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp Line 56 Column 0" Caller="xf::compression::details::byteGen(ap_uint&lt;32&gt;&amp;, ap_uint&lt;6&gt;&amp;, ap_uint&lt;16&gt;*, ap_uint&lt;9&gt;*, ap_uint&lt;9&gt;*, ap_uint&lt;9&gt;*, ap_uint&lt;9&gt;*, ap_uint&lt;9&gt;*, ap_uint&lt;9&gt;*, ap_uint&lt;9&gt;*, ap_uint&lt;5&gt;*, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;16&gt;, 0&gt;&amp;, ap_uint&lt;9&gt;, ap_uint&lt;9&gt;, bool&amp;)" Caller-DebugLoc="File /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp Line 454 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/array:186:0" msg_body="Inlining function 'std::__array_traits&lt;ap_fixed&lt;8, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 4ul&gt;::_S_ref(ap_fixed&lt;8, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; const (&amp;) [4], unsigned long)' into 'std::array&lt;ap_fixed&lt;8, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 4ul&gt;::operator[](unsigned long)'">
+        <args Callee="std::__array_traits&lt;ap_fixed&lt;8, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 4ul&gt;::_S_ref(ap_fixed&lt;8, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt; const (&amp;) [4], unsigned long)" Callee-DebugLoc="File /tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/array Line 56 Column 0" Caller="std::array&lt;ap_fixed&lt;8, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 4ul&gt;::operator[](unsigned long)" Caller-DebugLoc="File /tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/array Line 186 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../work/cc/src/decompressor_kernel.cc:25:0" msg_body="Inlining function 'std::array&lt;ap_fixed&lt;8, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 4ul&gt;::operator[](unsigned long)' into 'decompressor_kernel(ap_uint&lt;1024&gt;*, hls::stream&lt;hls::vector&lt;ap_fixed&lt;8, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 4ul&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)'">
+        <args Callee="std::array&lt;ap_fixed&lt;8, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 4ul&gt;::operator[](unsigned long)" Callee-DebugLoc="File /tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/array Line 186 Column 0" Caller="decompressor_kernel(ap_uint&lt;1024&gt;*, hls::stream&lt;hls::vector&lt;ap_fixed&lt;8, 4, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, 4ul&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)" Caller-DebugLoc="File ../work/cc/src/decompressor_kernel.cc Line 25 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:770:16" msg_body="Applying array_partition to 'count': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="count"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:781:17" msg_body="Applying array_partition to 'firstCode': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="firstCode"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:460:16" msg_body="Applying array_partition to 'symbol': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="symbol"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:304:16" msg_body="Applying array_partition to 'current_bits': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="current_bits"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:306:13" msg_body="Applying array_partition to 'symbol': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="symbol"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:902:21" msg_body="Applying array_partition to 'codeOffsets': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="codeOffsets"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:904:13" msg_body="Applying array_partition to 'bl1Code': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="bl1Code"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:905:20" msg_body="Applying array_partition to 'bl2Code': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="bl2Code"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:906:20" msg_body="Applying array_partition to 'bl3Code': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="bl3Code"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:907:20" msg_body="Applying array_partition to 'bl4Code': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="bl4Code"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:908:20" msg_body="Applying array_partition to 'bl5Code': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="bl5Code"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:909:20" msg_body="Applying array_partition to 'bl6Code': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="bl6Code"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:910:20" msg_body="Applying array_partition to 'bl7Code': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="bl7Code"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:911:20" msg_body="Applying array_partition to 'bl8Code': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="bl8Code"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:912:20" msg_body="Applying array_partition to 'bl9Code': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="bl9Code"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:913:20" msg_body="Applying array_partition to 'bl10Code': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="bl10Code"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:914:20" msg_body="Applying array_partition to 'bl11Code': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="bl11Code"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:915:20" msg_body="Applying array_partition to 'bl12Code': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="bl12Code"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:916:20" msg_body="Applying array_partition to 'bl13Code': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="bl13Code"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:917:20" msg_body="Applying array_partition to 'bl14Code': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="bl14Code"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:918:20" msg_body="Applying array_partition to 'bl15Code': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="bl15Code"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../work/cc/src/decompressor_kernel.cc:25:0" msg_body="Aggregating fifo (hls::stream) variable 'out_stream' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="out_stream"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../work/cc/src/decompressor_kernel.cc:71:24" msg_body="Aggregating scalar variable 'fixed_point_data' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="fixed_point_data"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../work/cc/src/decompressor_kernel.cc:72:26" msg_body="Loop 'VITIS_LOOP_72_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_72_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../work/cc/src/decompressor_kernel.cc:25:0" msg_body="Unrolling loop 'VITIS_LOOP_72_5' (../work/cc/src/decompressor_kernel.cc:72:26) in function 'decompressor_kernel' completely with a factor of 4">
+        <args Factor="4" LoopLoc="../work/cc/src/decompressor_kernel.cc:72:26" LoopName="VITIS_LOOP_72_5"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

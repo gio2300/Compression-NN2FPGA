@@ -1,0 +1,106 @@
+{
+  "0": {
+    "basicblocks": 17,
+    "calls": "4",
+    "file": "decompressor_kernel.cc",
+    "fileloc": 21,
+    "instructions": 91,
+    "loads": {
+      "T": 1
+    },
+    "name": "decompressor_kernel",
+    "total_instructions": 3240
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "huffman_decoder.hpp",
+    "fileloc": 71,
+    "instructions": 10,
+    "loads": {
+      "L": 2
+    },
+    "name": "discardBitStreamLL",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 10
+  },
+  "2": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "huffman_decoder.hpp",
+    "fileloc": 280,
+    "instructions": 401,
+    "loads": {
+      "G": 2,
+      "L": 63
+    },
+    "name": "huffmanBytegenLL",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 401
+  },
+  "3": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "huffman_decoder.hpp",
+    "fileloc": 52,
+    "instructions": 20,
+    "loads": {
+      "L": 3
+    },
+    "name": "loadBitStreamLL",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 20
+  },
+  "4": {
+    "basicblocks": 63,
+    "calls": "3 1 3 1 3 1 3 1 3 1 3 1 3 3 1 3 1 3 3 1 1 1 1 6 5 6 6 3 2 3 2 1 3 1 3 1 3 1 3 1",
+    "file": "huffman_decoder.hpp",
+    "fileloc": 866,
+    "instructions": 628,
+    "loads": {
+      "G": 2,
+      "L": 23
+    },
+    "name": "huffmanDecoderLL<xf::compression::FULL, xf::compression::BOTH>",
+    "stores": {
+      "L": 37
+    },
+    "total_instructions": 3134
+  },
+  "5": {
+    "basicblocks": 18,
+    "calls": "",
+    "file": "huffman_decoder.hpp",
+    "fileloc": 439,
+    "instructions": 195,
+    "loads": {
+      "L": 18
+    },
+    "name": "byteGen",
+    "stores": {
+      "L": 11
+    },
+    "total_instructions": 195
+  },
+  "6": {
+    "basicblocks": 72,
+    "calls": "",
+    "file": "huffman_decoder.hpp",
+    "fileloc": 746,
+    "instructions": 333,
+    "loads": {
+      "L": 2
+    },
+    "name": "code_generator_array_dyn_new",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 333
+  }
+}

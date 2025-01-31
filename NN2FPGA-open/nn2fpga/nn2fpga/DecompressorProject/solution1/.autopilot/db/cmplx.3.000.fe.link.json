@@ -1,0 +1,120 @@
+{
+  "0": {
+    "basicblocks": 38,
+    "calls": "3",
+    "file": "decompressor_kernel.cc",
+    "fileloc": 21,
+    "instructions": 177,
+    "loads": {
+      "L": 2,
+      "T": 1
+    },
+    "name": "decompressor_kernel",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 26623
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "huffman_decoder.hpp",
+    "fileloc": 71,
+    "instructions": 7,
+    "name": "discardBitStreamLL",
+    "total_instructions": 31
+  },
+  "2": {
+    "basicblocks": 37,
+    "calls": "",
+    "file": "huffman_decoder.hpp",
+    "fileloc": 746,
+    "instructions": 398,
+    "loads": {
+      "L": 20
+    },
+    "name": "code_generator_array_dyn_new",
+    "stores": {
+      "L": 20
+    },
+    "total_instructions": 1632
+  },
+  "3": {
+    "basicblocks": 98,
+    "calls": "7 1 7 1 7 1 7 1 7 1 7 1 7 7 1 7 1 7 7 1 1 1 1 2 4 2 2 7 8 7 8 1 7 1 7 1 7 1 7 1",
+    "file": "huffman_decoder.hpp",
+    "fileloc": 866,
+    "instructions": 1169,
+    "loads": {
+      "L": 34
+    },
+    "name": "huffmanDecoderLL<xf::compression::FULL, xf::compression::BOTH>",
+    "stores": {
+      "L": 33
+    },
+    "total_instructions": 25896
+  },
+  "4": {
+    "basicblocks": 34,
+    "calls": "7",
+    "file": "huffman_decoder.hpp",
+    "fileloc": 439,
+    "instructions": 388,
+    "loads": {
+      "L": 21
+    },
+    "name": "byteGen",
+    "stores": {
+      "L": 21
+    },
+    "total_instructions": 1955
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "array",
+    "fileloc": 55,
+    "instructions": 2,
+    "name": "_S_ref",
+    "total_instructions": 2
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "array",
+    "fileloc": 185,
+    "instructions": 3,
+    "name": "operator[]",
+    "total_instructions": 5
+  },
+  "7": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "huffman_decoder.hpp",
+    "fileloc": 52,
+    "instructions": 32,
+    "loads": {
+      "L": 1
+    },
+    "name": "loadBitStreamLL",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 169
+  },
+  "8": {
+    "basicblocks": 44,
+    "calls": "",
+    "file": "huffman_decoder.hpp",
+    "fileloc": 280,
+    "instructions": 927,
+    "loads": {
+      "L": 47
+    },
+    "name": "huffmanBytegenLL",
+    "stores": {
+      "L": 47
+    },
+    "total_instructions": 4541
+  }
+}

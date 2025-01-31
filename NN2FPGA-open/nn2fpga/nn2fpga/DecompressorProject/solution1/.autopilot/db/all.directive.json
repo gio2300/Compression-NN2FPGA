@@ -1,0 +1,44 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "decompressor_kernel",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "decompressor_kernel"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "decompressor_kernel",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "decompressor_kernel"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/csynth.tcl",
+    "sourceLine": 20,
+    "success": true
+  }
+]

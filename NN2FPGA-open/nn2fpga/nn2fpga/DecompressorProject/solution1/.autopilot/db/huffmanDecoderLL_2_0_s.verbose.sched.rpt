@@ -1,0 +1,829 @@
+
+
+================================================================
+== Vitis HLS Report for 'huffmanDecoderLL_2_0_s'
+================================================================
+* Date:           Tue Oct  8 21:19:30 2024
+
+* Version:        2022.2 (Build 4023990 on Oct 11 2023)
+* Project:        DecompressorProject
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu11p-flga2577-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.260 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                         |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |        Loop Name        |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- huffmanDecoder_label0  |        ?|        ?|         ?|          -|          -|     ?|        no|
+        | + VITIS_LOOP_1009_1     |        ?|        ?|         ?|          -|          -|     ?|        no|
+        +-------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 46
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 11 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 11 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 40 
+13 --> 14 
+14 --> 15 19 33 34 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 33 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 12 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 33 38 
+38 --> 39 
+39 --> 33 
+40 --> 41 
+41 --> 42 
+42 --> 43 44 
+43 --> 46 
+44 --> 45 
+45 --> 46 
+46 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.46>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%bitbuffer_0 = alloca i32 1"   --->   Operation 47 'alloca' 'bitbuffer_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%bits_cntr_0 = alloca i32 1"   --->   Operation 48 'alloca' 'bits_cntr_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%bitbuffer_9_loc = alloca i64 1"   --->   Operation 49 'alloca' 'bitbuffer_9_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%bits_cntr_7_loc = alloca i64 1"   --->   Operation 50 'alloca' 'bits_cntr_7_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%done_9_loc = alloca i64 1"   --->   Operation 51 'alloca' 'done_9_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%bits_cntr_5_loc = alloca i64 1"   --->   Operation 52 'alloca' 'bits_cntr_5_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%bitbuffer_6338_loc = alloca i64 1"   --->   Operation 53 'alloca' 'bitbuffer_6338_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%done_6_loc = alloca i64 1"   --->   Operation 54 'alloca' 'done_6_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%bitbuffer_1333_loc = alloca i64 1"   --->   Operation 55 'alloca' 'bitbuffer_1333_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%bits_cntr_1340_loc = alloca i64 1"   --->   Operation 56 'alloca' 'bits_cntr_1340_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%done_1346_loc = alloca i64 1"   --->   Operation 57 'alloca' 'done_1346_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %lz77_output_stream, void @empty_17, i32 0, i32 0, void @empty_16, i32 0, i32 0, void @empty_16, void @empty_16, void @empty_16, i32 0, i32 0, i32 0, i32 0, void @empty_16, void @empty_16, i32 4294967295, i32 0"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %huffman_eos_stream, void @empty_17, i32 0, i32 0, void @empty_16, i32 0, i32 0, void @empty_16, void @empty_16, void @empty_16, i32 0, i32 0, i32 0, i32 0, void @empty_16, void @empty_16, i32 4294967295, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %huffman_input_stream, void @empty_17, i32 0, i32 0, void @empty_16, i32 0, i32 0, void @empty_16, void @empty_16, void @empty_16, i32 0, i32 0, i32 0, i32 0, void @empty_16, void @empty_16, i32 4294967295, i32 0"   --->   Operation 60 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%dynamic_lens = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:894]   --->   Operation 61 'alloca' 'dynamic_lens' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 5> <Depth = 318> <RAM>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%codeOffsets = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:902]   --->   Operation 62 'alloca' 'codeOffsets' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%codeOffsets_1 = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:902]   --->   Operation 63 'alloca' 'codeOffsets_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%bl1Code = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:904]   --->   Operation 64 'alloca' 'bl1Code' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 2> <RAM>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%bl1Code_1 = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:904]   --->   Operation 65 'alloca' 'bl1Code_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 2> <RAM>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%bl2Code = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:905]   --->   Operation 66 'alloca' 'bl2Code' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 4> <RAM>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%bl2Code_1 = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:905]   --->   Operation 67 'alloca' 'bl2Code_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 4> <RAM>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%bl3Code = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:906]   --->   Operation 68 'alloca' 'bl3Code' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 8> <RAM>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%bl3Code_1 = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:906]   --->   Operation 69 'alloca' 'bl3Code_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 8> <RAM>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%bl4Code = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:907]   --->   Operation 70 'alloca' 'bl4Code' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 16> <RAM>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%bl4Code_1 = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:907]   --->   Operation 71 'alloca' 'bl4Code_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 16> <RAM>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%bl5Code = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:908]   --->   Operation 72 'alloca' 'bl5Code' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 32> <RAM>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%bl5Code_1 = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:908]   --->   Operation 73 'alloca' 'bl5Code_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 32> <RAM>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%bl6Code = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:909]   --->   Operation 74 'alloca' 'bl6Code' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 64> <RAM>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%bl6Code_1 = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:909]   --->   Operation 75 'alloca' 'bl6Code_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 64> <RAM>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%bl7Code = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:910]   --->   Operation 76 'alloca' 'bl7Code' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 128> <RAM>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%bl7Code_1 = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:910]   --->   Operation 77 'alloca' 'bl7Code_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 128> <RAM>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%bl8Code = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:911]   --->   Operation 78 'alloca' 'bl8Code' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 256> <RAM>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%bl8Code_1 = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:911]   --->   Operation 79 'alloca' 'bl8Code_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 256> <RAM>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%bl9Code = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:912]   --->   Operation 80 'alloca' 'bl9Code' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 256> <RAM>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%bl9Code_1 = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:912]   --->   Operation 81 'alloca' 'bl9Code_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 256> <RAM>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%bl10Code = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:913]   --->   Operation 82 'alloca' 'bl10Code' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 256> <RAM>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%bl10Code_1 = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:913]   --->   Operation 83 'alloca' 'bl10Code_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 256> <RAM>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%bl11Code = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:914]   --->   Operation 84 'alloca' 'bl11Code' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 256> <RAM>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%bl11Code_1 = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:914]   --->   Operation 85 'alloca' 'bl11Code_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 256> <RAM>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%bl12Code = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:915]   --->   Operation 86 'alloca' 'bl12Code' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 256> <RAM>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%bl12Code_1 = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:915]   --->   Operation 87 'alloca' 'bl12Code_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 256> <RAM>
+ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%bl13Code = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:916]   --->   Operation 88 'alloca' 'bl13Code' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 256> <RAM>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%bl13Code_1 = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:916]   --->   Operation 89 'alloca' 'bl13Code_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 256> <RAM>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%bl14Code = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:917]   --->   Operation 90 'alloca' 'bl14Code' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 256> <RAM>
+ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%bl14Code_1 = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:917]   --->   Operation 91 'alloca' 'bl14Code_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 256> <RAM>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%bl15Code = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:918]   --->   Operation 92 'alloca' 'bl15Code' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 256> <RAM>
+ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%bl15Code_1 = alloca i64 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:918]   --->   Operation 93 'alloca' 'bl15Code_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_LUTRAM">   --->   Core 89 'RAM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.73> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 9> <Depth = 256> <RAM>
+ST_1 : Operation 94 [1/1] (0.46ns)   --->   "%store_ln0 = store i6 0, i6 %bits_cntr_0"   --->   Operation 94 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 95 [1/1] (0.46ns)   --->   "%store_ln0 = store i32 0, i32 %bitbuffer_0"   --->   Operation 95 'store' 'store_ln0' <Predicate = true> <Delay = 0.46>
+ST_1 : Operation 96 [1/1] (0.46ns)   --->   "%br_ln879 = br void %while.cond" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:879]   --->   Operation 96 'br' 'br_ln879' <Predicate = true> <Delay = 0.46>
+
+State 2 <SV = 1> <Delay = 2.10>
+ST_2 : Operation 97 [1/1] (0.00ns)   --->   "%done_0 = phi i1 0, void %entry, i1 %done_13, void %if.end435" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1200]   --->   Operation 97 'phi' 'done_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 98 [1/1] (0.00ns)   --->   "%isMultipleFiles = phi i1 0, void %entry, i1 %isMultipleFiles_1, void %if.end435"   --->   Operation 98 'phi' 'isMultipleFiles' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 99 [1/1] (0.00ns)   --->   "%br_ln879 = br i1 %done_0, void %while.body, void %while.end436" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:879]   --->   Operation 99 'br' 'br_ln879' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 100 [1/1] (2.10ns)   --->   "%write_ln1210 = write void @_ssdm_op_Write.ap_fifo.volatile.i16P0A, i16 %lz77_output_stream, i16 65535" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1210]   --->   Operation 100 'write' 'write_ln1210' <Predicate = (done_0)> <Delay = 2.10> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.10> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 101 [1/1] (0.00ns)   --->   "%ret_ln1211 = ret" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1211]   --->   Operation 101 'ret' 'ret_ln1211' <Predicate = (done_0)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 7.25>
+ST_3 : Operation 102 [1/1] (0.00ns)   --->   "%bitbuffer_0_load = load i32 %bitbuffer_0" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:952]   --->   Operation 102 'load' 'bitbuffer_0_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 103 [1/1] (0.00ns)   --->   "%bits_cntr_0_load = load i6 %bits_cntr_0" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:952]   --->   Operation 103 'load' 'bits_cntr_0_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 104 [1/1] (0.00ns)   --->   "%specloopname_ln879 = specloopname void @_ssdm_op_SpecLoopName, void @empty" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:879]   --->   Operation 104 'specloopname' 'specloopname_ln879' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 105 [1/1] (0.00ns)   --->   "%specmemcore_ln895 = specmemcore void @_ssdm_op_SpecMemCore, i5 %dynamic_lens, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:895]   --->   Operation 105 'specmemcore' 'specmemcore_ln895' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 106 [1/1] (0.00ns)   --->   "%specmemcore_ln919 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl1Code_1, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:919]   --->   Operation 106 'specmemcore' 'specmemcore_ln919' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 107 [1/1] (0.00ns)   --->   "%specmemcore_ln919 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl1Code, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:919]   --->   Operation 107 'specmemcore' 'specmemcore_ln919' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 108 [1/1] (0.00ns)   --->   "%specmemcore_ln921 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl2Code_1, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:921]   --->   Operation 108 'specmemcore' 'specmemcore_ln921' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 109 [1/1] (0.00ns)   --->   "%specmemcore_ln921 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl2Code, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:921]   --->   Operation 109 'specmemcore' 'specmemcore_ln921' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 110 [1/1] (0.00ns)   --->   "%specmemcore_ln923 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl3Code_1, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:923]   --->   Operation 110 'specmemcore' 'specmemcore_ln923' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 111 [1/1] (0.00ns)   --->   "%specmemcore_ln923 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl3Code, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:923]   --->   Operation 111 'specmemcore' 'specmemcore_ln923' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 112 [1/1] (0.00ns)   --->   "%specmemcore_ln925 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl4Code_1, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:925]   --->   Operation 112 'specmemcore' 'specmemcore_ln925' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 113 [1/1] (0.00ns)   --->   "%specmemcore_ln925 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl4Code, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:925]   --->   Operation 113 'specmemcore' 'specmemcore_ln925' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 114 [1/1] (0.00ns)   --->   "%specmemcore_ln927 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl5Code_1, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:927]   --->   Operation 114 'specmemcore' 'specmemcore_ln927' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 115 [1/1] (0.00ns)   --->   "%specmemcore_ln927 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl5Code, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:927]   --->   Operation 115 'specmemcore' 'specmemcore_ln927' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 116 [1/1] (0.00ns)   --->   "%specmemcore_ln929 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl6Code_1, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:929]   --->   Operation 116 'specmemcore' 'specmemcore_ln929' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 117 [1/1] (0.00ns)   --->   "%specmemcore_ln929 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl6Code, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:929]   --->   Operation 117 'specmemcore' 'specmemcore_ln929' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 118 [1/1] (0.00ns)   --->   "%specmemcore_ln931 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl7Code_1, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:931]   --->   Operation 118 'specmemcore' 'specmemcore_ln931' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 119 [1/1] (0.00ns)   --->   "%specmemcore_ln931 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl7Code, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:931]   --->   Operation 119 'specmemcore' 'specmemcore_ln931' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 120 [1/1] (0.00ns)   --->   "%specmemcore_ln933 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl8Code_1, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:933]   --->   Operation 120 'specmemcore' 'specmemcore_ln933' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 121 [1/1] (0.00ns)   --->   "%specmemcore_ln933 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl8Code, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:933]   --->   Operation 121 'specmemcore' 'specmemcore_ln933' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 122 [1/1] (0.00ns)   --->   "%specmemcore_ln935 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl9Code_1, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:935]   --->   Operation 122 'specmemcore' 'specmemcore_ln935' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 123 [1/1] (0.00ns)   --->   "%specmemcore_ln935 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl9Code, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:935]   --->   Operation 123 'specmemcore' 'specmemcore_ln935' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 124 [1/1] (0.00ns)   --->   "%specmemcore_ln937 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl10Code_1, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:937]   --->   Operation 124 'specmemcore' 'specmemcore_ln937' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 125 [1/1] (0.00ns)   --->   "%specmemcore_ln937 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl10Code, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:937]   --->   Operation 125 'specmemcore' 'specmemcore_ln937' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 126 [1/1] (0.00ns)   --->   "%specmemcore_ln939 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl11Code_1, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:939]   --->   Operation 126 'specmemcore' 'specmemcore_ln939' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 127 [1/1] (0.00ns)   --->   "%specmemcore_ln939 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl11Code, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:939]   --->   Operation 127 'specmemcore' 'specmemcore_ln939' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 128 [1/1] (0.00ns)   --->   "%specmemcore_ln941 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl12Code_1, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:941]   --->   Operation 128 'specmemcore' 'specmemcore_ln941' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 129 [1/1] (0.00ns)   --->   "%specmemcore_ln941 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl12Code, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:941]   --->   Operation 129 'specmemcore' 'specmemcore_ln941' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 130 [1/1] (0.00ns)   --->   "%specmemcore_ln943 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl13Code_1, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:943]   --->   Operation 130 'specmemcore' 'specmemcore_ln943' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 131 [1/1] (0.00ns)   --->   "%specmemcore_ln943 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl13Code, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:943]   --->   Operation 131 'specmemcore' 'specmemcore_ln943' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 132 [1/1] (0.00ns)   --->   "%specmemcore_ln945 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl14Code_1, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:945]   --->   Operation 132 'specmemcore' 'specmemcore_ln945' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 133 [1/1] (0.00ns)   --->   "%specmemcore_ln945 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl14Code, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:945]   --->   Operation 133 'specmemcore' 'specmemcore_ln945' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 134 [1/1] (0.00ns)   --->   "%specmemcore_ln947 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl15Code_1, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:947]   --->   Operation 134 'specmemcore' 'specmemcore_ln947' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 135 [1/1] (0.00ns)   --->   "%specmemcore_ln947 = specmemcore void @_ssdm_op_SpecMemCore, i9 %bl15Code, i64 666, i64 19, i64 18446744073709551615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:947]   --->   Operation 135 'specmemcore' 'specmemcore_ln947' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 136 [1/1] (5.47ns)   --->   "%call_ret1 = call i39 @loadBitStreamLL, i32 %bitbuffer_0_load, i6 %bits_cntr_0_load, i6 %bits_cntr_0_load, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 0, i1 0" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:952]   --->   Operation 136 'call' 'call_ret1' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 137 [1/1] (0.00ns)   --->   "%bitbuffer = extractvalue i39 %call_ret1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:952]   --->   Operation 137 'extractvalue' 'bitbuffer' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 138 [1/1] (0.00ns)   --->   "%bits_cntr = extractvalue i39 %call_ret1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:952]   --->   Operation 138 'extractvalue' 'bits_cntr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 139 [1/1] (0.00ns)   --->   "%done = extractvalue i39 %call_ret1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:952]   --->   Operation 139 'extractvalue' 'done' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 140 [1/1] (0.00ns)   --->   "%magic_number = trunc i32 %bitbuffer" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:953]   --->   Operation 140 'trunc' 'magic_number' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 141 [1/1] (0.00ns)   --->   "%trunc_ln953_1 = trunc i32 %bitbuffer" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:953]   --->   Operation 141 'trunc' 'trunc_ln953_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 142 [1/1] (1.27ns)   --->   "%call_ret3 = call i38 @discardBitStreamLL, i32 %bitbuffer, i6 %bits_cntr, i5 16" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:954]   --->   Operation 142 'call' 'call_ret3' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 143 [1/1] (0.00ns)   --->   "%bitbuffer_1 = extractvalue i38 %call_ret3" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:954]   --->   Operation 143 'extractvalue' 'bitbuffer_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 144 [1/1] (0.00ns)   --->   "%bits_cntr_1 = extractvalue i38 %call_ret3" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:954]   --->   Operation 144 'extractvalue' 'bits_cntr_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 145 [1/1] (1.12ns)   --->   "%icmp_ln955 = icmp_eq  i16 %magic_number, i16 35615" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:955]   --->   Operation 145 'icmp' 'icmp_ln955' <Predicate = true> <Delay = 1.12> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.12> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 146 [1/1] (0.00ns)   --->   "%br_ln955 = br i1 %icmp_ln955, void %if.end61, void %if.then" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:955]   --->   Operation 146 'br' 'br_ln955' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 147 [1/1] (0.87ns)   --->   "%blocks_processed = icmp_ne  i8 %trunc_ln953_1, i8 120" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1003]   --->   Operation 147 'icmp' 'blocks_processed' <Predicate = (!icmp_ln955)> <Delay = 0.87> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 148 [1/1] (0.14ns)   --->   "%or_ln1008 = or i1 %isMultipleFiles, i1 %blocks_processed" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1008]   --->   Operation 148 'or' 'or_ln1008' <Predicate = (!icmp_ln955)> <Delay = 0.14> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 149 [1/1] (0.50ns)   --->   "%br_ln1008 = br void %if.end55" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1008]   --->   Operation 149 'br' 'br_ln1008' <Predicate = (!icmp_ln955)> <Delay = 0.50>
+
+State 4 <SV = 3> <Delay = 6.75>
+ST_4 : Operation 150 [1/1] (5.47ns)   --->   "%call_ret4 = call i39 @loadBitStreamLL, i32 %bitbuffer_1, i6 %bits_cntr_1, i6 %bits_cntr_1, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done, i1 %done" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:960]   --->   Operation 150 'call' 'call_ret4' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 151 [1/1] (0.00ns)   --->   "%bitbuffer_2 = extractvalue i39 %call_ret4" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:960]   --->   Operation 151 'extractvalue' 'bitbuffer_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 152 [1/1] (0.00ns)   --->   "%bits_cntr_2 = extractvalue i39 %call_ret4" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:960]   --->   Operation 152 'extractvalue' 'bits_cntr_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 153 [1/1] (0.00ns)   --->   "%done_1 = extractvalue i39 %call_ret4" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:960]   --->   Operation 153 'extractvalue' 'done_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 154 [1/1] (1.27ns)   --->   "%call_ret7 = call i38 @discardBitStreamLL, i32 %bitbuffer_2, i6 %bits_cntr_2, i5 16" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:962]   --->   Operation 154 'call' 'call_ret7' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 155 [1/1] (0.00ns)   --->   "%bitbuffer_3 = extractvalue i38 %call_ret7" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:962]   --->   Operation 155 'extractvalue' 'bitbuffer_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 156 [1/1] (0.00ns)   --->   "%bits_cntr_3 = extractvalue i38 %call_ret7" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:962]   --->   Operation 156 'extractvalue' 'bits_cntr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 157 [1/1] (0.00ns)   --->   "%tmp = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %bitbuffer_2, i32 8, i32 15" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:965]   --->   Operation 157 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 158 [1/1] (0.87ns)   --->   "%skip_fname = icmp_eq  i8 %tmp, i8 0" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:965]   --->   Operation 158 'icmp' 'skip_fname' <Predicate = true> <Delay = 0.87> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 6.75>
+ST_5 : Operation 159 [1/1] (5.47ns)   --->   "%call_ret9 = call i39 @loadBitStreamLL, i32 %bitbuffer_3, i6 %bits_cntr_3, i6 %bits_cntr_3, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_1, i1 %done_1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:966]   --->   Operation 159 'call' 'call_ret9' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 160 [1/1] (0.00ns)   --->   "%bitbuffer_4 = extractvalue i39 %call_ret9" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:966]   --->   Operation 160 'extractvalue' 'bitbuffer_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 161 [1/1] (0.00ns)   --->   "%bits_cntr_4 = extractvalue i39 %call_ret9" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:966]   --->   Operation 161 'extractvalue' 'bits_cntr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 162 [1/1] (0.00ns)   --->   "%done_2 = extractvalue i39 %call_ret9" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:966]   --->   Operation 162 'extractvalue' 'done_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 163 [1/1] (1.27ns)   --->   "%call_ret2 = call i38 @discardBitStreamLL, i32 %bitbuffer_4, i6 %bits_cntr_4, i5 16" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:967]   --->   Operation 163 'call' 'call_ret2' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 164 [1/1] (0.00ns)   --->   "%bitbuffer_5 = extractvalue i38 %call_ret2" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:967]   --->   Operation 164 'extractvalue' 'bitbuffer_5' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 165 [1/1] (0.00ns)   --->   "%bits_cntr_5 = extractvalue i38 %call_ret2" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:967]   --->   Operation 165 'extractvalue' 'bits_cntr_5' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 6.75>
+ST_6 : Operation 166 [1/1] (5.47ns)   --->   "%call_ret5 = call i39 @loadBitStreamLL, i32 %bitbuffer_5, i6 %bits_cntr_5, i6 %bits_cntr_5, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_2, i1 %done_2" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:972]   --->   Operation 166 'call' 'call_ret5' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 167 [1/1] (0.00ns)   --->   "%bitbuffer_6 = extractvalue i39 %call_ret5" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:972]   --->   Operation 167 'extractvalue' 'bitbuffer_6' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 168 [1/1] (0.00ns)   --->   "%bits_cntr_6 = extractvalue i39 %call_ret5" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:972]   --->   Operation 168 'extractvalue' 'bits_cntr_6' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 169 [1/1] (0.00ns)   --->   "%done_3 = extractvalue i39 %call_ret5" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:972]   --->   Operation 169 'extractvalue' 'done_3' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 170 [1/1] (1.27ns)   --->   "%call_ret6 = call i38 @discardBitStreamLL, i32 %bitbuffer_6, i6 %bits_cntr_6, i5 16" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:973]   --->   Operation 170 'call' 'call_ret6' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 171 [1/1] (0.00ns)   --->   "%bitbuffer_7 = extractvalue i38 %call_ret6" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:973]   --->   Operation 171 'extractvalue' 'bitbuffer_7' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 172 [1/1] (0.00ns)   --->   "%bits_cntr_7 = extractvalue i38 %call_ret6" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:973]   --->   Operation 172 'extractvalue' 'bits_cntr_7' <Predicate = true> <Delay = 0.00>
+
+State 7 <SV = 6> <Delay = 7.25>
+ST_7 : Operation 173 [1/1] (5.47ns)   --->   "%call_ret8 = call i39 @loadBitStreamLL, i32 %bitbuffer_7, i6 %bits_cntr_7, i6 %bits_cntr_7, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_3, i1 %done_3" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:974]   --->   Operation 173 'call' 'call_ret8' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 174 [1/1] (0.00ns)   --->   "%bitbuffer_8 = extractvalue i39 %call_ret8" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:974]   --->   Operation 174 'extractvalue' 'bitbuffer_8' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 175 [1/1] (0.00ns)   --->   "%bits_cntr_8 = extractvalue i39 %call_ret8" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:974]   --->   Operation 175 'extractvalue' 'bits_cntr_8' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 176 [1/1] (0.00ns)   --->   "%done_4 = extractvalue i39 %call_ret8" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:974]   --->   Operation 176 'extractvalue' 'done_4' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 177 [1/1] (1.27ns)   --->   "%call_ret10 = call i38 @discardBitStreamLL, i32 %bitbuffer_8, i6 %bits_cntr_8, i5 16" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:979]   --->   Operation 177 'call' 'call_ret10' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 178 [1/1] (0.00ns)   --->   "%bitbuffer_9 = extractvalue i38 %call_ret10" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:979]   --->   Operation 178 'extractvalue' 'bitbuffer_9' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 179 [1/1] (0.00ns)   --->   "%bits_cntr_11 = extractvalue i38 %call_ret10" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:979]   --->   Operation 179 'extractvalue' 'bits_cntr_11' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 180 [1/1] (0.50ns)   --->   "%br_ln981 = br i1 %skip_fname, void %read_fname, void %if.end55" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:981]   --->   Operation 180 'br' 'br_ln981' <Predicate = true> <Delay = 0.50>
+
+State 8 <SV = 7> <Delay = 5.47>
+ST_8 : Operation 181 [1/1] (5.47ns)   --->   "%call_ret11 = call i39 @loadBitStreamLL, i32 %bitbuffer_9, i6 %bits_cntr_11, i6 %bits_cntr_11, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_4, i1 %done_4" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:983]   --->   Operation 181 'call' 'call_ret11' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 182 [1/1] (0.00ns)   --->   "%bitbuffer_10 = extractvalue i39 %call_ret11" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:983]   --->   Operation 182 'extractvalue' 'bitbuffer_10' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 183 [1/1] (0.00ns)   --->   "%trunc_ln983 = trunc i32 %bitbuffer_10" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:983]   --->   Operation 183 'trunc' 'trunc_ln983' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 184 [1/1] (0.00ns)   --->   "%bits_cntr_12 = extractvalue i39 %call_ret11" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:983]   --->   Operation 184 'extractvalue' 'bits_cntr_12' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 185 [1/1] (0.00ns)   --->   "%done_6 = extractvalue i39 %call_ret11" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:983]   --->   Operation 185 'extractvalue' 'done_6' <Predicate = true> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 1.78>
+ST_9 : Operation 186 [1/1] (1.27ns)   --->   "%call_ret12 = call i38 @discardBitStreamLL, i32 %bitbuffer_10, i6 %bits_cntr_12, i5 8" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:985]   --->   Operation 186 'call' 'call_ret12' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 187 [1/1] (0.00ns)   --->   "%bitbuffer_13 = extractvalue i38 %call_ret12" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:985]   --->   Operation 187 'extractvalue' 'bitbuffer_13' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 188 [1/1] (0.00ns)   --->   "%bits_cntr_13 = extractvalue i38 %call_ret12" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:985]   --->   Operation 188 'extractvalue' 'bits_cntr_13' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 189 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 189 'wait' 'empty' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 190 [2/2] (0.50ns)   --->   "%call_ln983 = call void @huffmanDecoderLL<2, 0>_Pipeline_read_fname, i1 %done_6, i6 %bits_cntr_13, i32 %bitbuffer_13, i8 %trunc_ln983, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_1346_loc, i6 %bits_cntr_1340_loc, i32 %bitbuffer_1333_loc" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:983]   --->   Operation 190 'call' 'call_ln983' <Predicate = true> <Delay = 0.50> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.87>
+ST_10 : Operation 191 [1/2] (0.87ns)   --->   "%call_ln983 = call void @huffmanDecoderLL<2, 0>_Pipeline_read_fname, i1 %done_6, i6 %bits_cntr_13, i32 %bitbuffer_13, i8 %trunc_ln983, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_1346_loc, i6 %bits_cntr_1340_loc, i32 %bitbuffer_1333_loc" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:983]   --->   Operation 191 'call' 'call_ln983' <Predicate = true> <Delay = 0.87> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.96>
+ST_11 : Operation 192 [1/1] (0.00ns)   --->   "%done_1346_loc_load = load i1 %done_1346_loc"   --->   Operation 192 'load' 'done_1346_loc_load' <Predicate = (icmp_ln955 & !skip_fname)> <Delay = 0.00>
+ST_11 : Operation 193 [1/1] (0.00ns)   --->   "%bits_cntr_1340_loc_load = load i6 %bits_cntr_1340_loc"   --->   Operation 193 'load' 'bits_cntr_1340_loc_load' <Predicate = (icmp_ln955 & !skip_fname)> <Delay = 0.00>
+ST_11 : Operation 194 [1/1] (0.00ns)   --->   "%bitbuffer_1333_loc_load = load i32 %bitbuffer_1333_loc"   --->   Operation 194 'load' 'bitbuffer_1333_loc_load' <Predicate = (icmp_ln955 & !skip_fname)> <Delay = 0.00>
+ST_11 : Operation 195 [1/1] (0.00ns)   --->   "%empty_43 = wait i32 @_ssdm_op_Wait"   --->   Operation 195 'wait' 'empty_43' <Predicate = (icmp_ln955 & !skip_fname)> <Delay = 0.00>
+ST_11 : Operation 196 [1/1] (0.50ns)   --->   "%br_ln0 = br void %if.end55"   --->   Operation 196 'br' 'br_ln0' <Predicate = (icmp_ln955 & !skip_fname)> <Delay = 0.50>
+ST_11 : Operation 197 [1/1] (0.00ns)   --->   "%done_4349 = phi i1 %done, void %if.end61, i1 %done_1346_loc_load, void %read_fname, i1 %done_4, void %if.then"   --->   Operation 197 'phi' 'done_4349' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 198 [1/1] (0.00ns)   --->   "%bits_cntr_4343 = phi i6 %bits_cntr_1, void %if.end61, i6 %bits_cntr_1340_loc_load, void %read_fname, i6 %bits_cntr_11, void %if.then"   --->   Operation 198 'phi' 'bits_cntr_4343' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 199 [1/1] (0.00ns)   --->   "%bitbuffer_4336 = phi i32 %bitbuffer_1, void %if.end61, i32 %bitbuffer_1333_loc_load, void %read_fname, i32 %bitbuffer_9, void %if.then"   --->   Operation 199 'phi' 'bitbuffer_4336' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 200 [1/1] (0.00ns)   --->   "%isMultipleFiles_130 = phi i1 %isMultipleFiles, void %if.end61, i1 0, void %read_fname, i1 0, void %if.then"   --->   Operation 200 'phi' 'isMultipleFiles_130' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 201 [1/1] (0.00ns)   --->   "%isGzip_028 = phi i1 0, void %if.end61, i1 1, void %read_fname, i1 1, void %if.then"   --->   Operation 201 'phi' 'isGzip_028' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 202 [1/1] (0.00ns)   --->   "%blocks_processed_1 = phi i1 %or_ln1008, void %if.end61, i1 0, void %read_fname, i1 0, void %if.then" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1008]   --->   Operation 202 'phi' 'blocks_processed_1' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 203 [1/1] (0.46ns)   --->   "%br_ln1009 = br void %while.cond64" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1009]   --->   Operation 203 'br' 'br_ln1009' <Predicate = true> <Delay = 0.46>
+
+State 12 <SV = 11> <Delay = 0.14>
+ST_12 : Operation 204 [1/1] (0.00ns)   --->   "%done_5 = phi i1 %done_4349, void %if.end55, i1 %done_11, void %if.end405" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:952]   --->   Operation 204 'phi' 'done_5' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 205 [1/1] (0.00ns)   --->   "%bits_cntr_5344 = phi i6 %bits_cntr_4343, void %if.end55, i6 %bits_cntr_9, void %if.end405" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:954]   --->   Operation 205 'phi' 'bits_cntr_5344' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 206 [1/1] (0.00ns)   --->   "%bitbuffer_5337 = phi i32 %bitbuffer_4336, void %if.end55, i32 %bitbuffer_11, void %if.end405" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:954]   --->   Operation 206 'phi' 'bitbuffer_5337' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 207 [1/1] (0.00ns)   --->   "%blocks_processed_2 = phi i1 %blocks_processed_1, void %if.end55, i1 %blocks_processed_4, void %if.end405"   --->   Operation 207 'phi' 'blocks_processed_2' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 208 [1/1] (0.00ns)   --->   "%isMultipleFiles_1 = phi i1 %isMultipleFiles_130, void %if.end55, i1 1, void %if.end405"   --->   Operation 208 'phi' 'isMultipleFiles_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 209 [1/1] (0.14ns)   --->   "%or_ln1009 = or i1 %blocks_processed_2, i1 %done_5" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1009]   --->   Operation 209 'or' 'or_ln1009' <Predicate = true> <Delay = 0.14> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 210 [1/1] (0.00ns)   --->   "%br_ln1009 = br i1 %or_ln1009, void %_ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit948, void %while.end408" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1009]   --->   Operation 210 'br' 'br_ln1009' <Predicate = true> <Delay = 0.00>
+
+State 13 <SV = 12> <Delay = 6.31>
+ST_13 : Operation 211 [1/1] (5.47ns)   --->   "%call_ret18 = call i39 @loadBitStreamLL, i32 %bitbuffer_5337, i6 %bits_cntr_5344, i6 %bits_cntr_5344, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 0, i1 0" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1013]   --->   Operation 211 'call' 'call_ret18' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 212 [1/1] (0.00ns)   --->   "%bitbuffer_19 = extractvalue i39 %call_ret18" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1013]   --->   Operation 212 'extractvalue' 'bitbuffer_19' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 213 [1/1] (0.00ns)   --->   "%dynamic_last = trunc i32 %bitbuffer_19" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1013]   --->   Operation 213 'trunc' 'dynamic_last' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 214 [1/1] (0.00ns) (grouped into LUT with out node bits_cntr_20)   --->   "%bits_cntr_19 = extractvalue i39 %call_ret18" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1013]   --->   Operation 214 'extractvalue' 'bits_cntr_19' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 215 [1/1] (0.00ns)   --->   "%done_9 = extractvalue i39 %call_ret18" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1013]   --->   Operation 215 'extractvalue' 'done_9' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 216 [1/1] (0.00ns)   --->   "%cb_type = partselect i2 @_ssdm_op_PartSelect.i2.i32.i32.i32, i32 %bitbuffer_19, i32 1, i32 2" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1017]   --->   Operation 216 'partselect' 'cb_type' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 217 [1/1] (0.00ns)   --->   "%bitbuffer_20 = partselect i29 @_ssdm_op_PartSelect.i29.i32.i32.i32, i32 %bitbuffer_19, i32 3, i32 31" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1018]   --->   Operation 217 'partselect' 'bitbuffer_20' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 218 [1/1] (0.84ns) (out node of the LUT)   --->   "%bits_cntr_20 = add i6 %bits_cntr_19, i6 61" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1019]   --->   Operation 218 'add' 'bits_cntr_20' <Predicate = true> <Delay = 0.84> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 219 [1/1] (0.00ns)   --->   "%trunc_ln1019 = trunc i6 %bits_cntr_20" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1019]   --->   Operation 219 'trunc' 'trunc_ln1019' <Predicate = true> <Delay = 0.00>
+
+State 14 <SV = 13> <Delay = 6.36>
+ST_14 : Operation 220 [1/1] (0.00ns)   --->   "%specloopname_ln1009 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1009]   --->   Operation 220 'specloopname' 'specloopname_ln1009' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 221 [1/1] (0.00ns)   --->   "%zext_ln1018 = zext i29 %bitbuffer_20" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1018]   --->   Operation 221 'zext' 'zext_ln1018' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 222 [1/1] (0.88ns)   --->   "%switch_ln1021 = switch i2 %cb_type, void %if.end405, i2 0, void %if.then79, i2 2, void %dyn_len_bits, i2 1, void %VITIS_LOOP_1130_3" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1021]   --->   Operation 222 'switch' 'switch_ln1021' <Predicate = true> <Delay = 0.88>
+ST_14 : Operation 223 [1/1] (5.47ns)   --->   "%call_ret27 = call i39 @loadBitStreamLL, i32 %zext_ln1018, i6 %bits_cntr_20, i6 %bits_cntr_20, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_9, i1 %done_9" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1056]   --->   Operation 223 'call' 'call_ret27' <Predicate = (cb_type == 2)> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 224 [1/1] (0.00ns)   --->   "%bitbuffer_31 = extractvalue i39 %call_ret27" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1056]   --->   Operation 224 'extractvalue' 'bitbuffer_31' <Predicate = (cb_type == 2)> <Delay = 0.00>
+ST_14 : Operation 225 [1/1] (0.00ns)   --->   "%bits_cntr_31 = extractvalue i39 %call_ret27" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1056]   --->   Operation 225 'extractvalue' 'bits_cntr_31' <Predicate = (cb_type == 2)> <Delay = 0.00>
+ST_14 : Operation 226 [1/1] (0.00ns)   --->   "%done_17 = extractvalue i39 %call_ret27" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1056]   --->   Operation 226 'extractvalue' 'done_17' <Predicate = (cb_type == 2)> <Delay = 0.00>
+ST_14 : Operation 227 [1/1] (0.00ns)   --->   "%trunc_ln1057 = trunc i32 %bitbuffer_31" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1057]   --->   Operation 227 'trunc' 'trunc_ln1057' <Predicate = (cb_type == 2)> <Delay = 0.00>
+
+State 15 <SV = 24> <Delay = 0.00>
+ST_15 : Operation 228 [2/2] (0.00ns)   --->   "%call_ln0 = call void @huffmanDecoderLL<2, 0>_Pipeline_VITIS_LOOP_1130_3, i9 %bl8Code, i16 %codeOffsets, i16 %codeOffsets_1, i9 %bl9Code, i9 %bl7Code, i9 %bl5Code_1"   --->   Operation 228 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 25> <Delay = 5.47>
+ST_16 : Operation 229 [1/1] (5.47ns)   --->   "%call_ret31 = call i39 @loadBitStreamLL, i32 %zext_ln1018, i6 %bits_cntr_20, i6 %bits_cntr_20, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_9, i1 %done_9" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1124]   --->   Operation 229 'call' 'call_ret31' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_16 : Operation 230 [1/1] (0.00ns)   --->   "%bitbuffer_38 = extractvalue i39 %call_ret31" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1124]   --->   Operation 230 'extractvalue' 'bitbuffer_38' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 231 [1/1] (0.00ns)   --->   "%bits_cntr_38 = extractvalue i39 %call_ret31" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1124]   --->   Operation 231 'extractvalue' 'bits_cntr_38' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 232 [1/1] (0.00ns)   --->   "%done_21 = extractvalue i39 %call_ret31" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1124]   --->   Operation 232 'extractvalue' 'done_21' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 233 [1/2] (0.00ns)   --->   "%call_ln0 = call void @huffmanDecoderLL<2, 0>_Pipeline_VITIS_LOOP_1130_3, i9 %bl8Code, i16 %codeOffsets, i16 %codeOffsets_1, i9 %bl9Code, i9 %bl7Code, i9 %bl5Code_1"   --->   Operation 233 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 17 <SV = 26> <Delay = 0.34>
+ST_17 : Operation 234 [1/1] (0.34ns)   --->   "%ignoreValue = select i1 %dynamic_last, i3 5, i3 6" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1168]   --->   Operation 234 'select' 'ignoreValue' <Predicate = true> <Delay = 0.34> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_17 : Operation 235 [2/2] (0.00ns)   --->   "%call_ret32 = call i39 @huffmanBytegenLL, i32 %bitbuffer_38, i6 %bits_cntr_38, i16 %lz77_output_stream, i1 %huffman_eos_stream, i16 %huffman_input_stream, i16 %codeOffsets, i16 %codeOffsets_1, i9 %bl1Code, i9 %bl1Code_1, i9 %bl2Code, i9 %bl2Code_1, i9 %bl3Code, i9 %bl3Code_1, i9 %bl4Code, i9 %bl4Code_1, i9 %bl5Code, i9 %bl5Code_1, i9 %bl6Code, i9 %bl6Code_1, i9 %bl7Code, i9 %bl7Code_1, i9 %bl8Code, i9 %bl8Code_1, i9 %bl9Code, i9 %bl9Code_1, i9 %bl10Code, i9 %bl10Code_1, i9 %bl11Code, i9 %bl11Code_1, i9 %bl12Code, i9 %bl12Code_1, i9 %bl13Code, i9 %bl13Code_1, i9 %bl14Code, i9 %bl14Code_1, i9 %bl15Code, i9 %bl15Code_1, i1 %done_21, i3 %ignoreValue, i4 %lext, i4 %dext" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1169]   --->   Operation 235 'call' 'call_ret32' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 18 <SV = 27> <Delay = 0.58>
+ST_18 : Operation 236 [1/2] (0.00ns)   --->   "%call_ret32 = call i39 @huffmanBytegenLL, i32 %bitbuffer_38, i6 %bits_cntr_38, i16 %lz77_output_stream, i1 %huffman_eos_stream, i16 %huffman_input_stream, i16 %codeOffsets, i16 %codeOffsets_1, i9 %bl1Code, i9 %bl1Code_1, i9 %bl2Code, i9 %bl2Code_1, i9 %bl3Code, i9 %bl3Code_1, i9 %bl4Code, i9 %bl4Code_1, i9 %bl5Code, i9 %bl5Code_1, i9 %bl6Code, i9 %bl6Code_1, i9 %bl7Code, i9 %bl7Code_1, i9 %bl8Code, i9 %bl8Code_1, i9 %bl9Code, i9 %bl9Code_1, i9 %bl10Code, i9 %bl10Code_1, i9 %bl11Code, i9 %bl11Code_1, i9 %bl12Code, i9 %bl12Code_1, i9 %bl13Code, i9 %bl13Code_1, i9 %bl14Code, i9 %bl14Code_1, i9 %bl15Code, i9 %bl15Code_1, i1 %done_21, i3 %ignoreValue, i4 %lext, i4 %dext" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1169]   --->   Operation 236 'call' 'call_ret32' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_18 : Operation 237 [1/1] (0.00ns)   --->   "%done_22 = extractvalue i39 %call_ret32" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1169]   --->   Operation 237 'extractvalue' 'done_22' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 238 [1/1] (0.00ns)   --->   "%bitbuffer_39 = extractvalue i39 %call_ret32" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1169]   --->   Operation 238 'extractvalue' 'bitbuffer_39' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 239 [1/1] (0.00ns)   --->   "%bits_cntr_39 = extractvalue i39 %call_ret32" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1169]   --->   Operation 239 'extractvalue' 'bits_cntr_39' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 240 [1/1] (0.58ns)   --->   "%br_ln1176 = br void %if.end405" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1176]   --->   Operation 240 'br' 'br_ln1176' <Predicate = true> <Delay = 0.58>
+
+State 19 <SV = 14> <Delay = 3.83>
+ST_19 : Operation 241 [1/1] (1.27ns)   --->   "%call_ret28 = call i38 @discardBitStreamLL, i32 %bitbuffer_31, i6 %bits_cntr_31, i5 5" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1058]   --->   Operation 241 'call' 'call_ret28' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_19 : Operation 242 [1/1] (0.00ns)   --->   "%bitbuffer_32 = extractvalue i38 %call_ret28" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1058]   --->   Operation 242 'extractvalue' 'bitbuffer_32' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 243 [1/1] (0.00ns)   --->   "%bits_cntr_32 = extractvalue i38 %call_ret28" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1058]   --->   Operation 243 'extractvalue' 'bits_cntr_32' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 244 [1/1] (0.00ns)   --->   "%trunc_ln1060 = trunc i32 %bitbuffer_32" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1060]   --->   Operation 244 'trunc' 'trunc_ln1060' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 245 [1/1] (1.27ns)   --->   "%call_ret29 = call i38 @discardBitStreamLL, i32 %bitbuffer_32, i6 %bits_cntr_32, i5 5" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1061]   --->   Operation 245 'call' 'call_ret29' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_19 : Operation 246 [1/1] (0.00ns)   --->   "%bitbuffer_33 = extractvalue i38 %call_ret29" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1061]   --->   Operation 246 'extractvalue' 'bitbuffer_33' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 247 [1/1] (0.00ns)   --->   "%bits_cntr_33 = extractvalue i38 %call_ret29" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1061]   --->   Operation 247 'extractvalue' 'bits_cntr_33' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 248 [1/1] (1.27ns)   --->   "%call_ret30 = call i38 @discardBitStreamLL, i32 %bitbuffer_33, i6 %bits_cntr_33, i5 4" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1064]   --->   Operation 248 'call' 'call_ret30' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_19 : Operation 249 [1/1] (0.00ns)   --->   "%bitbuffer_34 = extractvalue i38 %call_ret30" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1064]   --->   Operation 249 'extractvalue' 'bitbuffer_34' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 250 [1/1] (0.00ns)   --->   "%bits_cntr_34 = extractvalue i38 %call_ret30" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1064]   --->   Operation 250 'extractvalue' 'bits_cntr_34' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 251 [1/1] (0.00ns)   --->   "%empty_45 = trunc i32 %bitbuffer_33" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1061]   --->   Operation 251 'trunc' 'empty_45' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 252 [1/1] (0.00ns)   --->   "%empty_46 = wait i32 @_ssdm_op_Wait"   --->   Operation 252 'wait' 'empty_46' <Predicate = true> <Delay = 0.00>
+
+State 20 <SV = 15> <Delay = 0.74>
+ST_20 : Operation 253 [1/1] (0.28ns)   --->   "%xor_ln1069 = xor i4 %empty_45, i4 15" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1069]   --->   Operation 253 'xor' 'xor_ln1069' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 254 [2/2] (0.46ns)   --->   "%call_ln1056 = call void @huffmanDecoderLL<2, 0>_Pipeline_dyn_len_bits, i1 %done_17, i6 %bits_cntr_34, i32 %bitbuffer_34, i4 %xor_ln1069, i5 %dynamic_lens, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_9_loc, i6 %bits_cntr_7_loc, i32 %bitbuffer_9_loc, i5 %order" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1056]   --->   Operation 254 'call' 'call_ln1056' <Predicate = true> <Delay = 0.46> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 21 <SV = 16> <Delay = 0.84>
+ST_21 : Operation 255 [1/2] (0.84ns)   --->   "%call_ln1056 = call void @huffmanDecoderLL<2, 0>_Pipeline_dyn_len_bits, i1 %done_17, i6 %bits_cntr_34, i32 %bitbuffer_34, i4 %xor_ln1069, i5 %dynamic_lens, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_9_loc, i6 %bits_cntr_7_loc, i32 %bitbuffer_9_loc, i5 %order" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1056]   --->   Operation 255 'call' 'call_ln1056' <Predicate = true> <Delay = 0.84> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 22 <SV = 17> <Delay = 2.56>
+ST_22 : Operation 256 [1/1] (0.00ns)   --->   "%bitbuffer_37_cast_cast = zext i4 %empty_45" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1061]   --->   Operation 256 'zext' 'bitbuffer_37_cast_cast' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 257 [1/1] (0.80ns)   --->   "%add_ln1069 = add i5 %bitbuffer_37_cast_cast, i5 4" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1069]   --->   Operation 257 'add' 'add_ln1069' <Predicate = true> <Delay = 0.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 258 [2/2] (1.76ns)   --->   "%call_ln1069 = call void @huffmanDecoderLL<2, 0>_Pipeline_VITIS_LOOP_1081_2, i5 %add_ln1069, i5 %dynamic_lens, i5 %order" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1069]   --->   Operation 258 'call' 'call_ln1069' <Predicate = true> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 23 <SV = 18> <Delay = 0.00>
+ST_23 : Operation 259 [1/2] (0.00ns)   --->   "%call_ln1069 = call void @huffmanDecoderLL<2, 0>_Pipeline_VITIS_LOOP_1081_2, i5 %add_ln1069, i5 %dynamic_lens, i5 %order" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1069]   --->   Operation 259 'call' 'call_ln1069' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 24 <SV = 19> <Delay = 1.63>
+ST_24 : Operation 260 [2/2] (1.63ns)   --->   "%call_ln1082 = call void @code_generator_array_dyn_new, i5 %dynamic_lens, i9 19, i16 %codeOffsets, i9 %bl1Code, i9 %bl2Code, i9 %bl3Code, i9 %bl4Code, i9 %bl5Code, i9 %bl6Code, i9 %bl7Code, i9 %bl8Code, i9 %bl9Code, i9 %bl10Code, i9 %bl11Code, i9 %bl12Code, i9 %bl13Code, i9 %bl14Code, i9 %bl15Code, i9 0" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1082]   --->   Operation 260 'call' 'call_ln1082' <Predicate = true> <Delay = 1.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 25 <SV = 20> <Delay = 0.00>
+ST_25 : Operation 261 [1/2] (0.00ns)   --->   "%call_ln1082 = call void @code_generator_array_dyn_new, i5 %dynamic_lens, i9 19, i16 %codeOffsets, i9 %bl1Code, i9 %bl2Code, i9 %bl3Code, i9 %bl4Code, i9 %bl5Code, i9 %bl6Code, i9 %bl7Code, i9 %bl8Code, i9 %bl9Code, i9 %bl10Code, i9 %bl11Code, i9 %bl12Code, i9 %bl13Code, i9 %bl14Code, i9 %bl15Code, i9 0" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1082]   --->   Operation 261 'call' 'call_ln1082' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 26 <SV = 21> <Delay = 6.38>
+ST_26 : Operation 262 [1/1] (0.00ns)   --->   "%zext_ln1057 = zext i5 %trunc_ln1057" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1057]   --->   Operation 262 'zext' 'zext_ln1057' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 263 [1/1] (0.90ns)   --->   "%dynamic_nlen = add i9 %zext_ln1057, i9 257" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1057]   --->   Operation 263 'add' 'dynamic_nlen' <Predicate = true> <Delay = 0.90> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.90> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 264 [1/1] (0.00ns)   --->   "%zext_ln1060 = zext i5 %trunc_ln1060" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1060]   --->   Operation 264 'zext' 'zext_ln1060' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 265 [1/1] (0.82ns)   --->   "%dynamic_ndist = add i6 %zext_ln1060, i6 1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1060]   --->   Operation 265 'add' 'dynamic_ndist' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 266 [1/1] (0.00ns)   --->   "%done_9_loc_load = load i1 %done_9_loc"   --->   Operation 266 'load' 'done_9_loc_load' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 267 [1/1] (0.00ns)   --->   "%bits_cntr_7_loc_load = load i6 %bits_cntr_7_loc"   --->   Operation 267 'load' 'bits_cntr_7_loc_load' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 268 [1/1] (0.00ns)   --->   "%bitbuffer_9_loc_load = load i32 %bitbuffer_9_loc"   --->   Operation 268 'load' 'bitbuffer_9_loc_load' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 269 [2/2] (5.47ns)   --->   "%call_ret33 = call i39 @byteGen, i32 %bitbuffer_9_loc_load, i6 %bits_cntr_7_loc_load, i16 %codeOffsets, i9 %bl1Code, i9 %bl2Code, i9 %bl3Code, i9 %bl4Code, i9 %bl5Code, i9 %bl6Code, i9 %bl7Code, i5 %dynamic_lens, i1 %huffman_eos_stream, i16 %huffman_input_stream, i9 %dynamic_nlen, i6 %dynamic_ndist, i1 %done_9_loc_load" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1087]   --->   Operation 269 'call' 'call_ret33' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 27 <SV = 22> <Delay = 0.36>
+ST_27 : Operation 270 [1/2] (0.36ns)   --->   "%call_ret33 = call i39 @byteGen, i32 %bitbuffer_9_loc_load, i6 %bits_cntr_7_loc_load, i16 %codeOffsets, i9 %bl1Code, i9 %bl2Code, i9 %bl3Code, i9 %bl4Code, i9 %bl5Code, i9 %bl6Code, i9 %bl7Code, i5 %dynamic_lens, i1 %huffman_eos_stream, i16 %huffman_input_stream, i9 %dynamic_nlen, i6 %dynamic_ndist, i1 %done_9_loc_load" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1087]   --->   Operation 270 'call' 'call_ret33' <Predicate = true> <Delay = 0.36> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_27 : Operation 271 [1/1] (0.00ns)   --->   "%bitbuffer_35 = extractvalue i39 %call_ret33" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1087]   --->   Operation 271 'extractvalue' 'bitbuffer_35' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 272 [1/1] (0.00ns)   --->   "%bits_cntr_35 = extractvalue i39 %call_ret33" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1087]   --->   Operation 272 'extractvalue' 'bits_cntr_35' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 273 [1/1] (0.00ns)   --->   "%done_18 = extractvalue i39 %call_ret33" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1087]   --->   Operation 273 'extractvalue' 'done_18' <Predicate = true> <Delay = 0.00>
+
+State 28 <SV = 23> <Delay = 1.63>
+ST_28 : Operation 274 [2/2] (1.63ns)   --->   "%call_ln1091 = call void @code_generator_array_dyn_new, i5 %dynamic_lens, i9 %dynamic_nlen, i16 %codeOffsets, i9 %bl1Code, i9 %bl2Code, i9 %bl3Code, i9 %bl4Code, i9 %bl5Code, i9 %bl6Code, i9 %bl7Code, i9 %bl8Code, i9 %bl9Code, i9 %bl10Code, i9 %bl11Code, i9 %bl12Code, i9 %bl13Code, i9 %bl14Code, i9 %bl15Code, i9 0" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1091]   --->   Operation 274 'call' 'call_ln1091' <Predicate = true> <Delay = 1.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 29 <SV = 24> <Delay = 0.00>
+ST_29 : Operation 275 [1/2] (0.00ns)   --->   "%call_ln1091 = call void @code_generator_array_dyn_new, i5 %dynamic_lens, i9 %dynamic_nlen, i16 %codeOffsets, i9 %bl1Code, i9 %bl2Code, i9 %bl3Code, i9 %bl4Code, i9 %bl5Code, i9 %bl6Code, i9 %bl7Code, i9 %bl8Code, i9 %bl9Code, i9 %bl10Code, i9 %bl11Code, i9 %bl12Code, i9 %bl13Code, i9 %bl14Code, i9 %bl15Code, i9 0" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1091]   --->   Operation 275 'call' 'call_ln1091' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 30 <SV = 25> <Delay = 1.63>
+ST_30 : Operation 276 [1/1] (0.00ns)   --->   "%zext_ln891 = zext i6 %dynamic_ndist" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:891]   --->   Operation 276 'zext' 'zext_ln891' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 277 [2/2] (1.63ns)   --->   "%call_ln1096 = call void @code_generator_array_dyn_new, i5 %dynamic_lens, i9 %zext_ln891, i16 %codeOffsets_1, i9 %bl1Code_1, i9 %bl2Code_1, i9 %bl3Code_1, i9 %bl4Code_1, i9 %bl5Code_1, i9 %bl6Code_1, i9 %bl7Code_1, i9 %bl8Code_1, i9 %bl9Code_1, i9 %bl10Code_1, i9 %bl11Code_1, i9 %bl12Code_1, i9 %bl13Code_1, i9 %bl14Code_1, i9 %bl15Code_1, i9 %dynamic_nlen" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1096]   --->   Operation 277 'call' 'call_ln1096' <Predicate = true> <Delay = 1.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 31 <SV = 26> <Delay = 5.47>
+ST_31 : Operation 278 [1/2] (0.00ns)   --->   "%call_ln1096 = call void @code_generator_array_dyn_new, i5 %dynamic_lens, i9 %zext_ln891, i16 %codeOffsets_1, i9 %bl1Code_1, i9 %bl2Code_1, i9 %bl3Code_1, i9 %bl4Code_1, i9 %bl5Code_1, i9 %bl6Code_1, i9 %bl7Code_1, i9 %bl8Code_1, i9 %bl9Code_1, i9 %bl10Code_1, i9 %bl11Code_1, i9 %bl12Code_1, i9 %bl13Code_1, i9 %bl14Code_1, i9 %bl15Code_1, i9 %dynamic_nlen" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1096]   --->   Operation 278 'call' 'call_ln1096' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_31 : Operation 279 [1/1] (5.47ns)   --->   "%call_ret34 = call i39 @loadBitStreamLL, i32 %bitbuffer_35, i6 %bits_cntr_35, i6 %bits_cntr_35, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_18, i1 %done_18" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1110]   --->   Operation 279 'call' 'call_ret34' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_31 : Operation 280 [1/1] (0.00ns)   --->   "%bitbuffer_36 = extractvalue i39 %call_ret34" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1110]   --->   Operation 280 'extractvalue' 'bitbuffer_36' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 281 [1/1] (0.00ns)   --->   "%bits_cntr_36 = extractvalue i39 %call_ret34" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1110]   --->   Operation 281 'extractvalue' 'bits_cntr_36' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 282 [1/1] (0.00ns)   --->   "%done_19 = extractvalue i39 %call_ret34" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1110]   --->   Operation 282 'extractvalue' 'done_19' <Predicate = true> <Delay = 0.00>
+
+State 32 <SV = 27> <Delay = 0.34>
+ST_32 : Operation 283 [1/1] (0.34ns)   --->   "%ignoreValue_1 = select i1 %dynamic_last, i3 5, i3 6" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1111]   --->   Operation 283 'select' 'ignoreValue_1' <Predicate = true> <Delay = 0.34> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_32 : Operation 284 [2/2] (0.00ns)   --->   "%call_ret35 = call i39 @huffmanBytegenLL, i32 %bitbuffer_36, i6 %bits_cntr_36, i16 %lz77_output_stream, i1 %huffman_eos_stream, i16 %huffman_input_stream, i16 %codeOffsets, i16 %codeOffsets_1, i9 %bl1Code, i9 %bl1Code_1, i9 %bl2Code, i9 %bl2Code_1, i9 %bl3Code, i9 %bl3Code_1, i9 %bl4Code, i9 %bl4Code_1, i9 %bl5Code, i9 %bl5Code_1, i9 %bl6Code, i9 %bl6Code_1, i9 %bl7Code, i9 %bl7Code_1, i9 %bl8Code, i9 %bl8Code_1, i9 %bl9Code, i9 %bl9Code_1, i9 %bl10Code, i9 %bl10Code_1, i9 %bl11Code, i9 %bl11Code_1, i9 %bl12Code, i9 %bl12Code_1, i9 %bl13Code, i9 %bl13Code_1, i9 %bl14Code, i9 %bl14Code_1, i9 %bl15Code, i9 %bl15Code_1, i1 %done_19, i3 %ignoreValue_1, i4 %lext, i4 %dext" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1112]   --->   Operation 284 'call' 'call_ret35' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 33 <SV = 28> <Delay = 0.73>
+ST_33 : Operation 285 [1/2] (0.00ns)   --->   "%call_ret35 = call i39 @huffmanBytegenLL, i32 %bitbuffer_36, i6 %bits_cntr_36, i16 %lz77_output_stream, i1 %huffman_eos_stream, i16 %huffman_input_stream, i16 %codeOffsets, i16 %codeOffsets_1, i9 %bl1Code, i9 %bl1Code_1, i9 %bl2Code, i9 %bl2Code_1, i9 %bl3Code, i9 %bl3Code_1, i9 %bl4Code, i9 %bl4Code_1, i9 %bl5Code, i9 %bl5Code_1, i9 %bl6Code, i9 %bl6Code_1, i9 %bl7Code, i9 %bl7Code_1, i9 %bl8Code, i9 %bl8Code_1, i9 %bl9Code, i9 %bl9Code_1, i9 %bl10Code, i9 %bl10Code_1, i9 %bl11Code, i9 %bl11Code_1, i9 %bl12Code, i9 %bl12Code_1, i9 %bl13Code, i9 %bl13Code_1, i9 %bl14Code, i9 %bl14Code_1, i9 %bl15Code, i9 %bl15Code_1, i1 %done_19, i3 %ignoreValue_1, i4 %lext, i4 %dext" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1112]   --->   Operation 285 'call' 'call_ret35' <Predicate = (cb_type == 2)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_33 : Operation 286 [1/1] (0.00ns)   --->   "%done_20 = extractvalue i39 %call_ret35" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1112]   --->   Operation 286 'extractvalue' 'done_20' <Predicate = (cb_type == 2)> <Delay = 0.00>
+ST_33 : Operation 287 [1/1] (0.00ns)   --->   "%bitbuffer_37 = extractvalue i39 %call_ret35" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1112]   --->   Operation 287 'extractvalue' 'bitbuffer_37' <Predicate = (cb_type == 2)> <Delay = 0.00>
+ST_33 : Operation 288 [1/1] (0.00ns)   --->   "%bits_cntr_37 = extractvalue i39 %call_ret35" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1112]   --->   Operation 288 'extractvalue' 'bits_cntr_37' <Predicate = (cb_type == 2)> <Delay = 0.00>
+ST_33 : Operation 289 [1/1] (0.58ns)   --->   "%br_ln1120 = br void %if.end405" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1120]   --->   Operation 289 'br' 'br_ln1120' <Predicate = (cb_type == 2)> <Delay = 0.58>
+ST_33 : Operation 290 [1/1] (0.00ns)   --->   "%done_11 = phi i1 %done_22, void %VITIS_LOOP_1130_3, i1 %done_20, void %dyn_len_bits, i1 %done_6_loc_load, void %for.body.preheader, i1 %done_9, void %_ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit948, i1 %done_16, void %if.then79"   --->   Operation 290 'phi' 'done_11' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 291 [1/1] (0.00ns)   --->   "%bits_cntr_9 = phi i6 %bits_cntr_39, void %VITIS_LOOP_1130_3, i6 %bits_cntr_37, void %dyn_len_bits, i6 %bits_cntr_5_loc_load, void %for.body.preheader, i6 %bits_cntr_20, void %_ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit948, i6 %bits_cntr_30, void %if.then79"   --->   Operation 291 'phi' 'bits_cntr_9' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 292 [1/1] (0.00ns)   --->   "%bitbuffer_11 = phi i32 %bitbuffer_39, void %VITIS_LOOP_1130_3, i32 %bitbuffer_37, void %dyn_len_bits, i32 %bitbuffer_6338_loc_load, void %for.body.preheader, i32 %zext_ln1018, void %_ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit948, i32 %bitbuffer_30, void %if.then79"   --->   Operation 292 'phi' 'bitbuffer_11' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 293 [1/1] (0.00ns) (grouped into LUT with out node blocks_processed_4)   --->   "%blocks_processed_3 = phi i1 0, void %VITIS_LOOP_1130_3, i1 0, void %dyn_len_bits, i1 0, void %for.body.preheader, i1 1, void %_ZrSILi32ELb0EER11ap_int_baseIXT_EXT0_EES2_i.exit948, i1 0, void %if.then79"   --->   Operation 293 'phi' 'blocks_processed_3' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 294 [1/1] (0.14ns) (out node of the LUT)   --->   "%blocks_processed_4 = or i1 %dynamic_last, i1 %blocks_processed_3" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1179]   --->   Operation 294 'or' 'blocks_processed_4' <Predicate = true> <Delay = 0.14> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.14> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 295 [1/1] (0.00ns)   --->   "%br_ln1009 = br void %while.cond64" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1009]   --->   Operation 295 'br' 'br_ln1009' <Predicate = true> <Delay = 0.00>
+
+State 34 <SV = 22> <Delay = 6.70>
+ST_34 : Operation 296 [1/1] (0.00ns)   --->   "%zext_ln1022 = zext i3 %trunc_ln1019" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1022]   --->   Operation 296 'zext' 'zext_ln1022' <Predicate = true> <Delay = 0.00>
+ST_34 : Operation 297 [1/1] (0.00ns)   --->   "%zext_ln1022_1 = zext i3 %trunc_ln1019" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1022]   --->   Operation 297 'zext' 'zext_ln1022_1' <Predicate = true> <Delay = 0.00>
+ST_34 : Operation 298 [1/1] (1.22ns)   --->   "%bitbuffer_25 = lshr i29 %bitbuffer_20, i29 %zext_ln1022_1" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1022]   --->   Operation 298 'lshr' 'bitbuffer_25' <Predicate = true> <Delay = 1.22> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.22> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 299 [1/1] (0.00ns)   --->   "%zext_ln1022_2 = zext i29 %bitbuffer_25" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1022]   --->   Operation 299 'zext' 'zext_ln1022_2' <Predicate = true> <Delay = 0.00>
+ST_34 : Operation 300 [1/1] (0.84ns)   --->   "%bits_cntr_25 = sub i6 %bits_cntr_20, i6 %zext_ln1022" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1023]   --->   Operation 300 'sub' 'bits_cntr_25' <Predicate = true> <Delay = 0.84> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 301 [1/1] (5.47ns)   --->   "%call_ret22 = call i39 @loadBitStreamLL, i32 %zext_ln1022_2, i6 %bits_cntr_25, i6 %bits_cntr_25, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_9, i1 %done_9" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1025]   --->   Operation 301 'call' 'call_ret22' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_34 : Operation 302 [1/1] (0.00ns)   --->   "%bitbuffer_26 = extractvalue i39 %call_ret22" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1025]   --->   Operation 302 'extractvalue' 'bitbuffer_26' <Predicate = true> <Delay = 0.00>
+ST_34 : Operation 303 [1/1] (0.00ns)   --->   "%bits_cntr_26 = extractvalue i39 %call_ret22" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1025]   --->   Operation 303 'extractvalue' 'bits_cntr_26' <Predicate = true> <Delay = 0.00>
+ST_34 : Operation 304 [1/1] (0.00ns)   --->   "%done_14 = extractvalue i39 %call_ret22" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1025]   --->   Operation 304 'extractvalue' 'done_14' <Predicate = true> <Delay = 0.00>
+ST_34 : Operation 305 [1/1] (0.00ns)   --->   "%store_length = trunc i32 %bitbuffer_26" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1026]   --->   Operation 305 'trunc' 'store_length' <Predicate = true> <Delay = 0.00>
+
+State 35 <SV = 23> <Delay = 6.75>
+ST_35 : Operation 306 [1/1] (1.27ns)   --->   "%call_ret23 = call i38 @discardBitStreamLL, i32 %bitbuffer_26, i6 %bits_cntr_26, i5 16" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1027]   --->   Operation 306 'call' 'call_ret23' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_35 : Operation 307 [1/1] (0.00ns)   --->   "%bitbuffer_27 = extractvalue i38 %call_ret23" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1027]   --->   Operation 307 'extractvalue' 'bitbuffer_27' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 308 [1/1] (0.00ns)   --->   "%bits_cntr_27 = extractvalue i38 %call_ret23" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1027]   --->   Operation 308 'extractvalue' 'bits_cntr_27' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 309 [1/1] (5.47ns)   --->   "%call_ret24 = call i39 @loadBitStreamLL, i32 %bitbuffer_27, i6 %bits_cntr_27, i6 %bits_cntr_27, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_14, i1 %done_14" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1028]   --->   Operation 309 'call' 'call_ret24' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_35 : Operation 310 [1/1] (0.00ns)   --->   "%bitbuffer_28 = extractvalue i39 %call_ret24" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1028]   --->   Operation 310 'extractvalue' 'bitbuffer_28' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 311 [1/1] (0.00ns)   --->   "%bits_cntr_28 = extractvalue i39 %call_ret24" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1028]   --->   Operation 311 'extractvalue' 'bits_cntr_28' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 312 [1/1] (0.00ns)   --->   "%done_15 = extractvalue i39 %call_ret24" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1028]   --->   Operation 312 'extractvalue' 'done_15' <Predicate = true> <Delay = 0.00>
+
+State 36 <SV = 24> <Delay = 6.75>
+ST_36 : Operation 313 [1/1] (1.27ns)   --->   "%call_ret25 = call i38 @discardBitStreamLL, i32 %bitbuffer_28, i6 %bits_cntr_28, i5 16" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1029]   --->   Operation 313 'call' 'call_ret25' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_36 : Operation 314 [1/1] (0.00ns)   --->   "%bitbuffer_29 = extractvalue i38 %call_ret25" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1029]   --->   Operation 314 'extractvalue' 'bitbuffer_29' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 315 [1/1] (0.00ns)   --->   "%bits_cntr_29 = extractvalue i38 %call_ret25" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1029]   --->   Operation 315 'extractvalue' 'bits_cntr_29' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 316 [1/1] (5.47ns)   --->   "%call_ret26 = call i39 @loadBitStreamLL, i32 %bitbuffer_29, i6 %bits_cntr_29, i6 %bits_cntr_29, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_15, i1 %done_15" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1033]   --->   Operation 316 'call' 'call_ret26' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_36 : Operation 317 [1/1] (0.00ns)   --->   "%bitbuffer_30 = extractvalue i39 %call_ret26" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1033]   --->   Operation 317 'extractvalue' 'bitbuffer_30' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 318 [1/1] (0.00ns)   --->   "%bits_cntr_30 = extractvalue i39 %call_ret26" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1033]   --->   Operation 318 'extractvalue' 'bits_cntr_30' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 319 [1/1] (0.00ns)   --->   "%done_16 = extractvalue i39 %call_ret26" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1033]   --->   Operation 319 'extractvalue' 'done_16' <Predicate = true> <Delay = 0.00>
+
+State 37 <SV = 25> <Delay = 2.70>
+ST_37 : Operation 320 [1/1] (1.12ns)   --->   "%icmp_ln1035 = icmp_eq  i16 %store_length, i16 0" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1035]   --->   Operation 320 'icmp' 'icmp_ln1035' <Predicate = true> <Delay = 1.12> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.12> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 321 [1/1] (0.58ns)   --->   "%br_ln1035 = br i1 %icmp_ln1035, void %for.body.preheader, void %if.end405" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1035]   --->   Operation 321 'br' 'br_ln1035' <Predicate = true> <Delay = 0.58>
+ST_37 : Operation 322 [1/1] (0.00ns)   --->   "%empty_44 = wait i32 @_ssdm_op_Wait"   --->   Operation 322 'wait' 'empty_44' <Predicate = (!icmp_ln1035)> <Delay = 0.00>
+ST_37 : Operation 323 [2/2] (1.58ns)   --->   "%call_ln1033 = call void @huffmanDecoderLL<2, 0>_Pipeline_strd_blk_cpy, i1 %done_16, i32 %bitbuffer_30, i6 %bits_cntr_30, i16 %store_length, i16 %huffman_input_stream, i1 %huffman_eos_stream, i16 %lz77_output_stream, i1 %done_6_loc, i32 %bitbuffer_6338_loc, i6 %bits_cntr_5_loc" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1033]   --->   Operation 323 'call' 'call_ln1033' <Predicate = (!icmp_ln1035)> <Delay = 1.58> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 38 <SV = 26> <Delay = 0.00>
+ST_38 : Operation 324 [1/2] (0.00ns)   --->   "%call_ln1033 = call void @huffmanDecoderLL<2, 0>_Pipeline_strd_blk_cpy, i1 %done_16, i32 %bitbuffer_30, i6 %bits_cntr_30, i16 %store_length, i16 %huffman_input_stream, i1 %huffman_eos_stream, i16 %lz77_output_stream, i1 %done_6_loc, i32 %bitbuffer_6338_loc, i6 %bits_cntr_5_loc" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1033]   --->   Operation 324 'call' 'call_ln1033' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 39 <SV = 27> <Delay = 0.58>
+ST_39 : Operation 325 [1/1] (0.00ns)   --->   "%done_6_loc_load = load i1 %done_6_loc"   --->   Operation 325 'load' 'done_6_loc_load' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 326 [1/1] (0.00ns)   --->   "%bitbuffer_6338_loc_load = load i32 %bitbuffer_6338_loc"   --->   Operation 326 'load' 'bitbuffer_6338_loc_load' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 327 [1/1] (0.00ns)   --->   "%bits_cntr_5_loc_load = load i6 %bits_cntr_5_loc"   --->   Operation 327 'load' 'bits_cntr_5_loc_load' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 328 [1/1] (0.58ns)   --->   "%br_ln0 = br void %if.end405"   --->   Operation 328 'br' 'br_ln0' <Predicate = true> <Delay = 0.58>
+
+State 40 <SV = 17> <Delay = 6.75>
+ST_40 : Operation 329 [1/1] (0.00ns)   --->   "%leftOverBits = trunc i6 %bits_cntr_5344" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:876]   --->   Operation 329 'trunc' 'leftOverBits' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 330 [1/1] (0.00ns)   --->   "%zext_ln1182 = zext i3 %leftOverBits" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1182]   --->   Operation 330 'zext' 'zext_ln1182' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 331 [1/1] (1.27ns)   --->   "%call_ret13 = call i38 @discardBitStreamLL, i32 %bitbuffer_5337, i6 %bits_cntr_5344, i5 %zext_ln1182" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1183]   --->   Operation 331 'call' 'call_ret13' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_40 : Operation 332 [1/1] (0.00ns)   --->   "%bitbuffer_14 = extractvalue i38 %call_ret13" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1183]   --->   Operation 332 'extractvalue' 'bitbuffer_14' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 333 [1/1] (0.00ns)   --->   "%bits_cntr_14 = extractvalue i38 %call_ret13" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1183]   --->   Operation 333 'extractvalue' 'bits_cntr_14' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 334 [1/1] (5.47ns)   --->   "%call_ret14 = call i39 @loadBitStreamLL, i32 %bitbuffer_14, i6 %bits_cntr_14, i6 %bits_cntr_14, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_5, i1 %done_5" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1185]   --->   Operation 334 'call' 'call_ret14' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_40 : Operation 335 [1/1] (0.00ns)   --->   "%bitbuffer_15 = extractvalue i39 %call_ret14" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1185]   --->   Operation 335 'extractvalue' 'bitbuffer_15' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 336 [1/1] (0.00ns)   --->   "%bits_cntr_15 = extractvalue i39 %call_ret14" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1185]   --->   Operation 336 'extractvalue' 'bits_cntr_15' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 337 [1/1] (0.00ns)   --->   "%done_7 = extractvalue i39 %call_ret14" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1185]   --->   Operation 337 'extractvalue' 'done_7' <Predicate = true> <Delay = 0.00>
+
+State 41 <SV = 18> <Delay = 6.75>
+ST_41 : Operation 338 [1/1] (1.27ns)   --->   "%call_ret15 = call i38 @discardBitStreamLL, i32 %bitbuffer_15, i6 %bits_cntr_15, i5 16" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1188]   --->   Operation 338 'call' 'call_ret15' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_41 : Operation 339 [1/1] (0.00ns)   --->   "%bitbuffer_16 = extractvalue i38 %call_ret15" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1188]   --->   Operation 339 'extractvalue' 'bitbuffer_16' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 340 [1/1] (0.00ns)   --->   "%bits_cntr_16 = extractvalue i38 %call_ret15" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1188]   --->   Operation 340 'extractvalue' 'bits_cntr_16' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 341 [1/1] (5.47ns)   --->   "%call_ret16 = call i39 @loadBitStreamLL, i32 %bitbuffer_16, i6 %bits_cntr_16, i6 %bits_cntr_16, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_7, i1 %done_7" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1189]   --->   Operation 341 'call' 'call_ret16' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_41 : Operation 342 [1/1] (0.00ns)   --->   "%bitbuffer_17 = extractvalue i39 %call_ret16" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1189]   --->   Operation 342 'extractvalue' 'bitbuffer_17' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 343 [1/1] (0.00ns)   --->   "%bits_cntr_17 = extractvalue i39 %call_ret16" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1189]   --->   Operation 343 'extractvalue' 'bits_cntr_17' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 344 [1/1] (0.00ns)   --->   "%done_8 = extractvalue i39 %call_ret16" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1189]   --->   Operation 344 'extractvalue' 'done_8' <Predicate = true> <Delay = 0.00>
+
+State 42 <SV = 19> <Delay = 2.56>
+ST_42 : Operation 345 [1/1] (1.27ns)   --->   "%call_ret17 = call i38 @discardBitStreamLL, i32 %bitbuffer_17, i6 %bits_cntr_17, i5 16" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1192]   --->   Operation 345 'call' 'call_ret17' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_42 : Operation 346 [1/1] (0.00ns)   --->   "%bitbuffer_18 = extractvalue i38 %call_ret17" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1192]   --->   Operation 346 'extractvalue' 'bitbuffer_18' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 347 [1/1] (0.00ns)   --->   "%bits_cntr_18 = extractvalue i38 %call_ret17" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1192]   --->   Operation 347 'extractvalue' 'bits_cntr_18' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 348 [1/1] (0.00ns)   --->   "%br_ln1197 = br i1 %isGzip_028, void %while.cond428.preheader, void %if.then424" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1197]   --->   Operation 348 'br' 'br_ln1197' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 349 [1/1] (0.00ns)   --->   "%empty_47 = wait i32 @_ssdm_op_Wait"   --->   Operation 349 'wait' 'empty_47' <Predicate = (!isGzip_028)> <Delay = 0.00>
+ST_42 : Operation 350 [2/2] (2.56ns)   --->   "%call_ln1189 = call void @huffmanDecoderLL<2, 0>_Pipeline_consumeLeftOverData, i1 %done_8, i16 %huffman_input_stream, i1 %huffman_eos_stream" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1189]   --->   Operation 350 'call' 'call_ln1189' <Predicate = (!isGzip_028)> <Delay = 2.56> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 43 <SV = 20> <Delay = 0.46>
+ST_43 : Operation 351 [1/2] (0.00ns)   --->   "%call_ln1189 = call void @huffmanDecoderLL<2, 0>_Pipeline_consumeLeftOverData, i1 %done_8, i16 %huffman_input_stream, i1 %huffman_eos_stream" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1189]   --->   Operation 351 'call' 'call_ln1189' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_43 : Operation 352 [1/1] (0.46ns)   --->   "%br_ln0 = br void %if.end435"   --->   Operation 352 'br' 'br_ln0' <Predicate = true> <Delay = 0.46>
+
+State 44 <SV = 20> <Delay = 6.75>
+ST_44 : Operation 353 [1/1] (5.47ns)   --->   "%call_ret19 = call i39 @loadBitStreamLL, i32 %bitbuffer_18, i6 %bits_cntr_18, i6 %bits_cntr_18, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_8, i1 %done_8" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1198]   --->   Operation 353 'call' 'call_ret19' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_44 : Operation 354 [1/1] (0.00ns)   --->   "%bitbuffer_21 = extractvalue i39 %call_ret19" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1198]   --->   Operation 354 'extractvalue' 'bitbuffer_21' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 355 [1/1] (0.00ns)   --->   "%bits_cntr_21 = extractvalue i39 %call_ret19" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1198]   --->   Operation 355 'extractvalue' 'bits_cntr_21' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 356 [1/1] (0.00ns)   --->   "%done_10 = extractvalue i39 %call_ret19" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1198]   --->   Operation 356 'extractvalue' 'done_10' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 357 [1/1] (1.27ns)   --->   "%call_ret20 = call i38 @discardBitStreamLL, i32 %bitbuffer_21, i6 %bits_cntr_21, i5 16" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1199]   --->   Operation 357 'call' 'call_ret20' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_44 : Operation 358 [1/1] (0.00ns)   --->   "%bitbuffer_22 = extractvalue i38 %call_ret20" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1199]   --->   Operation 358 'extractvalue' 'bitbuffer_22' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 359 [1/1] (0.00ns)   --->   "%bits_cntr_22 = extractvalue i38 %call_ret20" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1199]   --->   Operation 359 'extractvalue' 'bits_cntr_22' <Predicate = true> <Delay = 0.00>
+
+State 45 <SV = 21> <Delay = 7.21>
+ST_45 : Operation 360 [1/1] (5.47ns)   --->   "%call_ret21 = call i39 @loadBitStreamLL, i32 %bitbuffer_22, i6 %bits_cntr_22, i6 %bits_cntr_22, i16 %huffman_input_stream, i1 %huffman_eos_stream, i1 %done_10, i1 %done_10" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1200]   --->   Operation 360 'call' 'call_ret21' <Predicate = true> <Delay = 5.47> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_45 : Operation 361 [1/1] (0.00ns)   --->   "%bitbuffer_23 = extractvalue i39 %call_ret21" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1200]   --->   Operation 361 'extractvalue' 'bitbuffer_23' <Predicate = true> <Delay = 0.00>
+ST_45 : Operation 362 [1/1] (0.00ns)   --->   "%bits_cntr_23 = extractvalue i39 %call_ret21" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1200]   --->   Operation 362 'extractvalue' 'bits_cntr_23' <Predicate = true> <Delay = 0.00>
+ST_45 : Operation 363 [1/1] (0.00ns)   --->   "%done_12 = extractvalue i39 %call_ret21" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1200]   --->   Operation 363 'extractvalue' 'done_12' <Predicate = true> <Delay = 0.00>
+ST_45 : Operation 364 [1/1] (1.27ns)   --->   "%call_ret = call i38 @discardBitStreamLL, i32 %bitbuffer_23, i6 %bits_cntr_23, i5 16" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1201]   --->   Operation 364 'call' 'call_ret' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_45 : Operation 365 [1/1] (0.00ns)   --->   "%bitbuffer_24 = extractvalue i38 %call_ret" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1201]   --->   Operation 365 'extractvalue' 'bitbuffer_24' <Predicate = true> <Delay = 0.00>
+ST_45 : Operation 366 [1/1] (0.00ns)   --->   "%bits_cntr_24 = extractvalue i38 %call_ret" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1201]   --->   Operation 366 'extractvalue' 'bits_cntr_24' <Predicate = true> <Delay = 0.00>
+ST_45 : Operation 367 [1/1] (0.46ns)   --->   "%br_ln1202 = br void %if.end435" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1202]   --->   Operation 367 'br' 'br_ln1202' <Predicate = true> <Delay = 0.46>
+
+State 46 <SV = 22> <Delay = 0.46>
+ST_46 : Operation 368 [1/1] (0.00ns)   --->   "%done_13 = phi i1 %done_12, void %if.then424, i1 1, void %while.cond428.preheader"   --->   Operation 368 'phi' 'done_13' <Predicate = true> <Delay = 0.00>
+ST_46 : Operation 369 [1/1] (0.00ns)   --->   "%bits_cntr_10 = phi i6 %bits_cntr_24, void %if.then424, i6 %bits_cntr_18, void %while.cond428.preheader"   --->   Operation 369 'phi' 'bits_cntr_10' <Predicate = true> <Delay = 0.00>
+ST_46 : Operation 370 [1/1] (0.00ns)   --->   "%bitbuffer_12 = phi i32 %bitbuffer_24, void %if.then424, i32 %bitbuffer_18, void %while.cond428.preheader"   --->   Operation 370 'phi' 'bitbuffer_12' <Predicate = true> <Delay = 0.00>
+ST_46 : Operation 371 [1/1] (0.46ns)   --->   "%store_ln1201 = store i6 %bits_cntr_10, i6 %bits_cntr_0" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1201]   --->   Operation 371 'store' 'store_ln1201' <Predicate = true> <Delay = 0.46>
+ST_46 : Operation 372 [1/1] (0.46ns)   --->   "%store_ln1201 = store i32 %bitbuffer_12, i32 %bitbuffer_0" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1201]   --->   Operation 372 'store' 'store_ln1201' <Predicate = true> <Delay = 0.46>
+ST_46 : Operation 373 [1/1] (0.00ns)   --->   "%br_ln879 = br void %while.cond" [/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:879]   --->   Operation 373 'br' 'br_ln879' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.460ns
+The critical path consists of the following:
+	'alloca' operation 6 bit ('bits_cntr_0') [8]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'bits_cntr_0' [54]  (0.460 ns)
+
+ <State 2>: 2.102ns
+The critical path consists of the following:
+	'phi' operation 1 bit ('done_0', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1200) with incoming values : ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1200) [58]  (0.000 ns)
+	fifo write operation ('write_ln1210', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1210) on port 'lz77_output_stream' (/home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1210) [338]  (2.102 ns)
+
+ <State 3>: 7.260ns
+The critical path consists of the following:
+	'load' operation 32 bit ('bitbuffer_0_load', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:952) on local variable 'bitbuffer_0' [62]  (0.000 ns)
+	'call' operation 39 bit ('call_ret1', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:952) to 'loadBitStreamLL' [96]  (5.479 ns)
+	'call' operation 38 bit ('call_ret3', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:954) to 'discardBitStreamLL' [102]  (1.279 ns)
+	blocking operation 0.502143 ns on control path)
+
+ <State 4>: 6.758ns
+The critical path consists of the following:
+	'call' operation 39 bit ('call_ret4', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:960) to 'loadBitStreamLL' [112]  (5.479 ns)
+	'call' operation 38 bit ('call_ret7', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:962) to 'discardBitStreamLL' [116]  (1.279 ns)
+
+ <State 5>: 6.758ns
+The critical path consists of the following:
+	'call' operation 39 bit ('call_ret9', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:966) to 'loadBitStreamLL' [121]  (5.479 ns)
+	'call' operation 38 bit ('call_ret2', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:967) to 'discardBitStreamLL' [125]  (1.279 ns)
+
+ <State 6>: 6.758ns
+The critical path consists of the following:
+	'call' operation 39 bit ('call_ret5', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:972) to 'loadBitStreamLL' [128]  (5.479 ns)
+	'call' operation 38 bit ('call_ret6', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:973) to 'discardBitStreamLL' [132]  (1.279 ns)
+
+ <State 7>: 7.260ns
+The critical path consists of the following:
+	'call' operation 39 bit ('call_ret8', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:974) to 'loadBitStreamLL' [135]  (5.479 ns)
+	'call' operation 38 bit ('call_ret10', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:979) to 'discardBitStreamLL' [139]  (1.279 ns)
+	blocking operation 0.502143 ns on control path)
+
+ <State 8>: 5.479ns
+The critical path consists of the following:
+	'call' operation 39 bit ('call_ret11', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:983) to 'loadBitStreamLL' [144]  (5.479 ns)
+
+ <State 9>: 1.781ns
+The critical path consists of the following:
+	'call' operation 38 bit ('call_ret12', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:985) to 'discardBitStreamLL' [149]  (1.279 ns)
+	'call' operation 0 bit ('call_ln983', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:983) to 'huffmanDecoderLL<2, 0>_Pipeline_read_fname' [153]  (0.502 ns)
+
+ <State 10>: 0.871ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln983', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:983) to 'huffmanDecoderLL<2, 0>_Pipeline_read_fname' [153]  (0.871 ns)
+
+ <State 11>: 0.962ns
+The critical path consists of the following:
+	'load' operation 1 bit ('done_1346_loc_load') on local variable 'done_1346_loc' [154]  (0.000 ns)
+	multiplexor before 'phi' operation 1 bit ('done') with incoming values : ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:952) ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:974) ('done_1346_loc_load') [160]  (0.502 ns)
+	'phi' operation 1 bit ('done') with incoming values : ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:952) ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:974) ('done_1346_loc_load') [160]  (0.000 ns)
+	blocking operation 0.46 ns on control path)
+
+ <State 12>: 0.148ns
+The critical path consists of the following:
+	'phi' operation 1 bit ('done_5', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:952) with incoming values : ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:952) ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:974) ('done_1346_loc_load') ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1013) ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1169) ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1112) ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1033) ('done_6_loc_load') [168]  (0.000 ns)
+	'or' operation 1 bit ('or_ln1009', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1009) [173]  (0.148 ns)
+
+ <State 13>: 6.319ns
+The critical path consists of the following:
+	'call' operation 39 bit ('call_ret18', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1013) to 'loadBitStreamLL' [177]  (5.479 ns)
+	'add' operation 6 bit ('bits_cntr', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1019) [185]  (0.840 ns)
+
+ <State 14>: 6.361ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation 1 bit ('done') with incoming values : ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1013) ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1169) ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1112) ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1033) ('done_6_loc_load') [283]  (0.882 ns)
+	'call' operation 39 bit ('call_ret27', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1056) to 'loadBitStreamLL' [201]  (5.479 ns)
+
+ <State 15>: 0.000ns
+The critical path consists of the following:
+
+ <State 16>: 5.479ns
+The critical path consists of the following:
+	'call' operation 39 bit ('call_ret31', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1124) to 'loadBitStreamLL' [189]  (5.479 ns)
+
+ <State 17>: 0.345ns
+The critical path consists of the following:
+	'select' operation 3 bit ('ignoreValue', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1168) [194]  (0.345 ns)
+
+ <State 18>: 0.586ns
+The critical path consists of the following:
+	'call' operation 39 bit ('call_ret32', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1169) to 'huffmanBytegenLL' [195]  (0.000 ns)
+	multiplexor before 'phi' operation 1 bit ('done') with incoming values : ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1013) ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1169) ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1112) ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1033) ('done_6_loc_load') [283]  (0.586 ns)
+
+ <State 19>: 3.836ns
+The critical path consists of the following:
+	'call' operation 38 bit ('call_ret28', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1058) to 'discardBitStreamLL' [208]  (1.279 ns)
+	'call' operation 38 bit ('call_ret29', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1061) to 'discardBitStreamLL' [215]  (1.279 ns)
+	'call' operation 38 bit ('call_ret30', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1064) to 'discardBitStreamLL' [218]  (1.279 ns)
+
+ <State 20>: 0.742ns
+The critical path consists of the following:
+	'xor' operation 4 bit ('xor_ln1069', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1069) [224]  (0.282 ns)
+	'call' operation 0 bit ('call_ln1056', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1056) to 'huffmanDecoderLL<2, 0>_Pipeline_dyn_len_bits' [226]  (0.460 ns)
+
+ <State 21>: 0.840ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln1056', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1056) to 'huffmanDecoderLL<2, 0>_Pipeline_dyn_len_bits' [226]  (0.840 ns)
+
+ <State 22>: 2.569ns
+The critical path consists of the following:
+	'add' operation 5 bit ('add_ln1069', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1069) [223]  (0.809 ns)
+	'call' operation 0 bit ('call_ln1069', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1069) to 'huffmanDecoderLL<2, 0>_Pipeline_VITIS_LOOP_1081_2' [230]  (1.760 ns)
+
+ <State 23>: 0.000ns
+The critical path consists of the following:
+
+ <State 24>: 1.632ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln1082', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1082) to 'code_generator_array_dyn_new' [231]  (1.632 ns)
+
+ <State 25>: 0.000ns
+The critical path consists of the following:
+
+ <State 26>: 6.381ns
+The critical path consists of the following:
+	'add' operation 9 bit ('dynamic_nlen', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1057) [207]  (0.902 ns)
+	'call' operation 39 bit ('call_ret33', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1087) to 'byteGen' [232]  (5.479 ns)
+
+ <State 27>: 0.363ns
+The critical path consists of the following:
+	'call' operation 39 bit ('call_ret33', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1087) to 'byteGen' [232]  (0.363 ns)
+
+ <State 28>: 1.632ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln1091', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1091) to 'code_generator_array_dyn_new' [236]  (1.632 ns)
+
+ <State 29>: 0.000ns
+The critical path consists of the following:
+
+ <State 30>: 1.632ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln1096', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1096) to 'code_generator_array_dyn_new' [237]  (1.632 ns)
+
+ <State 31>: 5.479ns
+The critical path consists of the following:
+	'call' operation 39 bit ('call_ret34', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1110) to 'loadBitStreamLL' [238]  (5.479 ns)
+
+ <State 32>: 0.345ns
+The critical path consists of the following:
+	'select' operation 3 bit ('ignoreValue', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1111) [242]  (0.345 ns)
+
+ <State 33>: 0.734ns
+The critical path consists of the following:
+	'call' operation 39 bit ('call_ret35', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1112) to 'huffmanBytegenLL' [243]  (0.000 ns)
+	multiplexor before 'phi' operation 1 bit ('blocks_processed') [286]  (0.586 ns)
+	'phi' operation 1 bit ('blocks_processed') [286]  (0.000 ns)
+	'or' operation 1 bit ('blocks_processed', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1179) [287]  (0.148 ns)
+
+ <State 34>: 6.707ns
+The critical path consists of the following:
+	'lshr' operation 29 bit ('bitbuffer', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1022) [251]  (1.228 ns)
+	'call' operation 39 bit ('call_ret22', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1025) to 'loadBitStreamLL' [254]  (5.479 ns)
+
+ <State 35>: 6.758ns
+The critical path consists of the following:
+	'call' operation 38 bit ('call_ret23', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1027) to 'discardBitStreamLL' [259]  (1.279 ns)
+	'call' operation 39 bit ('call_ret24', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1028) to 'loadBitStreamLL' [262]  (5.479 ns)
+
+ <State 36>: 6.758ns
+The critical path consists of the following:
+	'call' operation 38 bit ('call_ret25', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1029) to 'discardBitStreamLL' [266]  (1.279 ns)
+	'call' operation 39 bit ('call_ret26', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1033) to 'loadBitStreamLL' [269]  (5.479 ns)
+
+ <State 37>: 2.702ns
+The critical path consists of the following:
+	'icmp' operation 1 bit ('icmp_ln1035', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1035) [273]  (1.121 ns)
+	'call' operation 0 bit ('call_ln1033', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1033) to 'huffmanDecoderLL<2, 0>_Pipeline_strd_blk_cpy' [277]  (1.581 ns)
+
+ <State 38>: 0.000ns
+The critical path consists of the following:
+
+ <State 39>: 0.586ns
+The critical path consists of the following:
+	'load' operation 1 bit ('done_6_loc_load') on local variable 'done_6_loc' [278]  (0.000 ns)
+	multiplexor before 'phi' operation 1 bit ('done') with incoming values : ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1013) ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1169) ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1112) ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1033) ('done_6_loc_load') [283]  (0.586 ns)
+
+ <State 40>: 6.758ns
+The critical path consists of the following:
+	'call' operation 38 bit ('call_ret13', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1183) to 'discardBitStreamLL' [292]  (1.279 ns)
+	'call' operation 39 bit ('call_ret14', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1185) to 'loadBitStreamLL' [295]  (5.479 ns)
+
+ <State 41>: 6.758ns
+The critical path consists of the following:
+	'call' operation 38 bit ('call_ret15', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1188) to 'discardBitStreamLL' [299]  (1.279 ns)
+	'call' operation 39 bit ('call_ret16', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1189) to 'loadBitStreamLL' [302]  (5.479 ns)
+
+ <State 42>: 2.562ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln1189', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1189) to 'huffmanDecoderLL<2, 0>_Pipeline_consumeLeftOverData' [312]  (2.562 ns)
+
+ <State 43>: 0.460ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation 1 bit ('done') with incoming values : ('done', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1200) [331]  (0.460 ns)
+
+ <State 44>: 6.758ns
+The critical path consists of the following:
+	'call' operation 39 bit ('call_ret19', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1198) to 'loadBitStreamLL' [315]  (5.479 ns)
+	'call' operation 38 bit ('call_ret20', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1199) to 'discardBitStreamLL' [319]  (1.279 ns)
+
+ <State 45>: 7.218ns
+The critical path consists of the following:
+	'call' operation 39 bit ('call_ret21', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1200) to 'loadBitStreamLL' [322]  (5.479 ns)
+	'call' operation 38 bit ('call_ret', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1201) to 'discardBitStreamLL' [326]  (1.279 ns)
+	blocking operation 0.46 ns on control path)
+
+ <State 46>: 0.460ns
+The critical path consists of the following:
+	'phi' operation 6 bit ('bits_cntr') with incoming values : ('bits_cntr', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1192) ('bits_cntr', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1201) [332]  (0.000 ns)
+	'store' operation 0 bit ('store_ln1201', /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp:1201) of variable 'bits_cntr' on local variable 'bits_cntr_0' [334]  (0.460 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

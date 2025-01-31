@@ -1,0 +1,12 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../work/cc/include/decompress_tb.cpp in debug mode
+In file included from /home/giovannic/NN2FPGA-open/work/cc/include/decompressor_kernel.h:12,
+                 from ../../../../../work/cc/include/decompress_tb.cpp:5:
+/home/giovannic/Vitis_Libraries/data_compression/L2/include/lz4_compress_mm.hpp:33:10: fatal error: lz_compress.hpp: No such file or directory
+ #include "lz_compress.hpp"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [csim.mk:78: obj/decompress_tb.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

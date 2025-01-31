@@ -1,0 +1,507 @@
+---
+MainSourceFile:  /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          59287
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          286695
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          287159
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          287624
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          571011
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_127_1:  '
+    FileOffset:      127
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1469300
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_127_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_143_1:  '
+    FileOffset:      143
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1469747
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_143_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_169_1:  '
+    FileOffset:      169
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1470268
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_169_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_170_1:  '
+    FileOffset:      170
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1470585
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_170_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_198_1:  '
+    FileOffset:      198
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1471387
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_198_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_199_1:  '
+    FileOffset:      199
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1471742
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_199_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_200_1:  '
+    FileOffset:      200
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1472097
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_200_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_201_1:  '
+    FileOffset:      201
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1472452
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_201_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_202_1:  '
+    FileOffset:      202
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1472807
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_202_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_203_1:  '
+    FileOffset:      203
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1473162
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_203_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_204_1:  '
+    FileOffset:      204
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1473517
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_204_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_205_1:  '
+    FileOffset:      205
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1473872
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_205_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_206_1:  '
+    FileOffset:      206
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1474228
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_206_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_207_1:  '
+    FileOffset:      207
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1474585
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_222_1:  '
+    FileOffset:      222
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1475006
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_222_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_223_1:  '
+    FileOffset:      223
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1475342
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_223_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_224_1:  '
+    FileOffset:      224
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1475677
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_224_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_225_1:  '
+    FileOffset:      225
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1476011
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_225_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_226_1:  '
+    FileOffset:      226
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1476346
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_226_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_256_1:  '
+    FileOffset:      256
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1476802
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_256_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_257_1:  '
+    FileOffset:      257
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1477225
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_257_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_258_1:  '
+    FileOffset:      258
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1477650
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_258_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_259_1:  '
+    FileOffset:      259
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1478075
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_259_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_260_1:  '
+    FileOffset:      260
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1478500
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_260_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_261_1:  '
+    FileOffset:      261
+    FilePath:        /tools/xilinx/Vitis_HLS/2023.2/common/technology/autopilot/hls_vector.h
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1478924
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_261_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_43_1:  '
+    FileOffset:      43
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1481482
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_43_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_337_1:  '
+    FileOffset:      337
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1492523
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_337_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_345_2:  '
+    FileOffset:      345
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1492765
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_345_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_471_1:  '
+    FileOffset:      471
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1497508
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_471_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_702_1:  '
+    FileOffset:      702
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1504078
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_702_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      895
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      919
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      921
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      923
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      925
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      927
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      929
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      931
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      933
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      935
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      937
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      939
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      941
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      943
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      945
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_1p + lutram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      947
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1009_1:  '
+    FileOffset:      1009
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1514855
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1009_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1081_2:  '
+    FileOffset:      1081
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1518026
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1081_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1130_3:  '
+    FileOffset:      1130
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1520825
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1130_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1235_1:  '
+    FileOffset:      1235
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1524838
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1235_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1315_2:  '
+    FileOffset:      1315
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1527500
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1315_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1382_3:  '
+    FileOffset:      1382
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/include/huffman_decoder.hpp
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1530406
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1382_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_35_1:  '
+    FileOffset:      35
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/src/decompressor_kernel.cc
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1841958
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_35_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_37_2:  '
+    FileOffset:      37
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/src/decompressor_kernel.cc
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1842051
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_37_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_39_3:  '
+    FileOffset:      39
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/src/decompressor_kernel.cc
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1842099
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_39_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_64_4:  '
+    FileOffset:      64
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/src/decompressor_kernel.cc
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1842554
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_64_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_72_5:  '
+    FileOffset:      72
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/src/decompressor_kernel.cc
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1842766
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_72_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_87_6:  '
+    FileOffset:      87
+    FilePath:        /home/giovannic/NN2FPGA-open/work/cc/src/decompressor_kernel.cc
+    Replacements:    
+      - FilePath:        /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/.autopilot/db/decompressor_kernel.pp.0.cc
+        Offset:          1843121
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_87_6: '
+...

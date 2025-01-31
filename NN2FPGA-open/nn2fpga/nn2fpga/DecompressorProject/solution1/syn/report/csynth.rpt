@@ -1,0 +1,350 @@
+
+
+================================================================
+== Synthesis Summary Report of 'decompressor_kernel'
+================================================================
++ General Information: 
+    * Date:           Tue Oct  8 21:19:32 2024
+    * Version:        2022.2 (Build 4023990 on Oct 11 2023)
+    * Project:        DecompressorProject
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu11p-flga2577-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+------+----+------------+-------------+-----+
+    |                         Modules                        | Issue|      | Latency |  Latency  | Iteration|         |  Trip |          |      |    |            |             |     |
+    |                         & Loops                        | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined| BRAM | DSP|     FF     |     LUT     | URAM|
+    +--------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+------+----+------------+-------------+-----+
+    |+ decompressor_kernel                                   |     -|  0.04|        -|          -|         -|        -|      -|        no|     -|   -|  3484 (~0%)|   13241 (1%)|    -|
+    | + huffmanDecoderLL_2_0_s                               |     -|  0.04|        -|          -|         -|        -|      -|        no|     -|   -|  3090 (~0%)|  10401 (~0%)|    -|
+    |  o huffmanDecoder_label0                               |     -|  7.30|        -|          -|         -|        -|      -|        no|     -|   -|           -|            -|    -|
+    |   + loadBitStreamLL                                    |     -|  1.82|        0|      0.000|         -|        0|      -|        no|     -|   -|    40 (~0%)|    248 (~0%)|    -|
+    |   + discardBitStreamLL                                 |     -|  6.02|        0|      0.000|         -|        1|      -|       yes|     -|   -|           -|    113 (~0%)|    -|
+    |   + huffmanDecoderLL_2_0_Pipeline_read_fname           |     -|  1.49|        -|          -|         -|        -|      -|        no|     -|   -|    50 (~0%)|    275 (~0%)|    -|
+    |    o read_fname                                        |     -|  7.30|        -|          -|         1|        1|      -|       yes|     -|   -|           -|            -|    -|
+    |   + huffmanDecoderLL_2_0_Pipeline_consumeLeftOverData  |     -|  4.74|        -|          -|         -|        -|      -|        no|     -|   -|     5 (~0%)|     66 (~0%)|    -|
+    |    o consumeLeftOverData                               |     -|  7.30|        -|          -|         2|        1|      -|       yes|     -|   -|           -|            -|    -|
+    |   o VITIS_LOOP_1009_1                                  |     -|  7.30|        -|          -|         -|        -|      -|        no|     -|   -|           -|            -|    -|
+    |    + discardBitStreamLL                                |     -|  6.02|        0|      0.000|         -|        1|      -|       yes|     -|   -|           -|    113 (~0%)|    -|
+    |    + discardBitStreamLL                                |     -|  6.02|        0|      0.000|         -|        1|      -|       yes|     -|   -|           -|    113 (~0%)|    -|
+    |    + discardBitStreamLL                                |     -|  6.02|        0|      0.000|         -|        1|      -|       yes|     -|   -|           -|    113 (~0%)|    -|
+    |    + huffmanDecoderLL_2_0_Pipeline_VITIS_LOOP_1130_3   |     -|  5.52|      290|  2.900e+03|         -|      290|      -|        no|     -|   -|    57 (~0%)|    344 (~0%)|    -|
+    |     o VITIS_LOOP_1130_3                                |     -|  7.30|      288|  2.880e+03|         1|        1|    288|       yes|     -|   -|           -|            -|    -|
+    |    + huffmanBytegenLL                                  |     -|  0.84|        -|          -|         -|        -|      -|        no|     -|   -|   637 (~0%)|   2022 (~0%)|    -|
+    |     + huffmanBytegenLL_Pipeline_ByteGen                |     -|  0.84|        -|          -|         -|        -|      -|        no|     -|   -|   145 (~0%)|   1746 (~0%)|    -|
+    |      o ByteGen                                         |     -|  7.30|        -|          -|         2|        1|      -|       yes|     -|   -|           -|            -|    -|
+    |    + huffmanDecoderLL_2_0_Pipeline_dyn_len_bits        |     -|  0.85|        -|          -|         -|        -|      -|        no|     -|   -|   133 (~0%)|    349 (~0%)|    -|
+    |     o dyn_len_bits                                     |     -|  7.30|        -|          -|         2|        2|      -|       yes|     -|   -|           -|            -|    -|
+    |      + discardBitStreamLL                              |     -|  6.02|        0|      0.000|         -|        1|      -|       yes|     -|   -|           -|    113 (~0%)|    -|
+    |    + huffmanDecoderLL_2_0_Pipeline_VITIS_LOOP_1081_2   |     -|  5.54|      513|  5.130e+03|         -|      513|      -|        no|     -|   -|     9 (~0%)|     64 (~0%)|    -|
+    |     o VITIS_LOOP_1081_2                                |     -|  7.30|      511|  5.110e+03|         2|        1|    511|       yes|     -|   -|           -|            -|    -|
+    |    + code_generator_array_dyn_new                      |     -|  4.41|     1048|  1.048e+04|         -|     1048|      -|        no|     -|   -|   642 (~0%)|    895 (~0%)|    -|
+    |     + code_generator_array_dyn_new_Pipeline_cnt_lens   |     -|  4.65|      513|  5.130e+03|         -|      513|      -|        no|     -|   -|   156 (~0%)|    311 (~0%)|    -|
+    |      o cnt_lens                                        |     -|  7.30|      511|  5.110e+03|         2|        1|    511|       yes|     -|   -|           -|            -|    -|
+    |     + code_generator_array_dyn_new_Pipeline_firstCode  |     -|  4.41|       17|    170.000|         -|       17|      -|        no|     -|   -|   231 (~0%)|    169 (~0%)|    -|
+    |      o firstCode                                       |     -|  7.30|       15|    150.000|         1|        1|     15|       yes|     -|   -|           -|            -|    -|
+    |     + code_generator_array_dyn_new_Pipeline_CodeGen    |     -|  4.41|      513|  5.130e+03|         -|      513|      -|        no|     -|   -|   246 (~0%)|    350 (~0%)|    -|
+    |      o CodeGen                                         |     -|  7.30|      511|  5.110e+03|         2|        1|    511|       yes|     -|   -|           -|            -|    -|
+    |    + byteGen                                           |     -|  0.58|        -|          -|         -|        -|      -|        no|     -|   -|   344 (~0%)|   1613 (~0%)|    -|
+    |     + byteGen_Pipeline_bytegen                         |     -|  0.58|        -|          -|         -|        -|      -|        no|     -|   -|   175 (~0%)|   1266 (~0%)|    -|
+    |      o bytegen                                         |     -|  7.30|        -|          -|         2|        1|      -|       yes|     -|   -|           -|            -|    -|
+    |    + huffmanDecoderLL_2_0_Pipeline_strd_blk_cpy        |     -|  3.10|    65538|  6.554e+05|         -|    65538|      -|        no|     -|   -|    69 (~0%)|    328 (~0%)|    -|
+    |     o strd_blk_cpy                                     |     -|  7.30|    65536|  6.554e+05|         3|        1|  65535|       yes|     -|   -|           -|            -|    -|
+    | + decompressor_kernel_Pipeline_VITIS_LOOP_64_4         |     -|  2.74|        -|          -|         -|        -|      -|        no|     -|   -|    42 (~0%)|    145 (~0%)|    -|
+    |  o VITIS_LOOP_64_4                                     |     -|  7.30|        -|          -|         2|        1|      -|       yes|     -|   -|           -|            -|    -|
+    | + decompressor_kernel_Pipeline_VITIS_LOOP_87_6         |     -|  5.20|        -|          -|         -|        -|      -|        no|     -|   -|     2 (~0%)|     22 (~0%)|    -|
+    |  o VITIS_LOOP_87_6                                     |     -|  7.30|        -|          -|         1|        1|      -|       yes|     -|   -|           -|            -|    -|
+    | o VITIS_LOOP_35_1_VITIS_LOOP_37_2                      |     -|  7.30|        -|          -|         -|        -|      -|        no|     -|   -|           -|            -|    -|
+    |  + decompressor_kernel_Pipeline_VITIS_LOOP_39_3        |     -|  5.20|        -|          -|         -|        -|      -|        no|     -|   -|     2 (~0%)|     22 (~0%)|    -|
+    |   o VITIS_LOOP_39_3                                    |     -|  7.30|        -|          -|         1|        1|      -|       yes|     -|   -|           -|            -|    -|
+    +--------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+------+----+------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_FIFO
++------------+-----------+------------+
+| Interface  | Direction | Data Width |
++------------+-----------+------------+
+| out_eos    | out       | 1          |
+| out_stream | out       | 32         |
++------------+-----------+------------+
+
+* Other Ports
++-------------+---------+-----------+----------+
+| Port        | Mode    | Direction | Bitwidth |
++-------------+---------+-----------+----------+
+| m_axi_input | ap_none | in        | 1024     |
++-------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+---------------------------------------------------------------+
+| Argument    | Direction | Datatype                                                      |
++-------------+-----------+---------------------------------------------------------------+
+| m_axi_input | in        | ap_uint<1024>*                                                |
+| out_stream  | out       | stream<hls::vector<ap_fixed<8, 4, AP_RND, AP_SAT, 0>, 4>, 0>& |
+| out_eos     | out       | stream<bool, 0>&                                              |
++-------------+-----------+---------------------------------------------------------------+
+
+* SW-to-HW Mapping
++-------------+--------------+-----------+
+| Argument    | HW Interface | HW Type   |
++-------------+--------------+-----------+
+| m_axi_input | m_axi_input  | port      |
+| out_stream  | out_stream   | interface |
+| out_eos     | out_eos      | interface |
++-------------+--------------+-----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------------------------------------------+-----+--------+----------------------+-----+--------+---------+
+| Name                                                          | DSP | Pragma | Variable             | Op  | Impl   | Latency |
++---------------------------------------------------------------+-----+--------+----------------------+-----+--------+---------+
+| + decompressor_kernel                                         | 0   |        |                      |     |        |         |
+|   add_ln35_fu_192_p2                                          |     |        | add_ln35             | add | fabric | 0       |
+|   j_1_fu_241_p2                                               |     |        | j_1                  | add | fabric | 0       |
+|  + huffmanDecoderLL_2_0_s                                     | 0   |        |                      |     |        |         |
+|    bits_cntr_20_fu_1010_p2                                    |     |        | bits_cntr_20         | add | fabric | 0       |
+|    dynamic_nlen_fu_1073_p2                                    |     |        | dynamic_nlen         | add | fabric | 0       |
+|    dynamic_ndist_fu_1083_p2                                   |     |        | dynamic_ndist        | add | fabric | 0       |
+|    add_ln1069_fu_1063_p2                                      |     |        | add_ln1069           | add | fabric | 0       |
+|    bits_cntr_25_fu_1139_p2                                    |     |        | bits_cntr_25         | sub | fabric | 0       |
+|   + loadBitStreamLL                                           | 0   |        |                      |     |        |         |
+|     add_ln60_fu_159_p2                                        |     |        | add_ln60             | add | fabric | 0       |
+|     add_ln62_fu_166_p2                                        |     |        | add_ln62             | add | fabric | 0       |
+|   + discardBitStreamLL (grp_discardBitStreamLL_fu_600)        | 0   |        |                      |     |        |         |
+|     sub_ln74_fu_46_p2                                         |     |        | sub_ln74             | sub | fabric | 0       |
+|   + huffmanDecoderLL_2_0_Pipeline_read_fname                  | 0   |        |                      |     |        |         |
+|     bits_cntr_fu_218_p2                                       |     |        | bits_cntr            | add | fabric | 0       |
+|     bits_cntr_2_fu_289_p2                                     |     |        | bits_cntr_2          | add | fabric | 0       |
+|   + huffmanDecoderLL_2_0_Pipeline_VITIS_LOOP_1130_3           | 0   |        |                      |     |        |         |
+|     add_ln1130_fu_314_p2                                      |     |        | add_ln1130           | add | fabric | 0       |
+|     bit9_1_fu_375_p2                                          |     |        | bit9_1               | add | fabric | 0       |
+|     grp_fu_275_p2                                             |     |        | bit8_2               | add | fabric | 0       |
+|     bit7_1_fu_410_p2                                          |     |        | bit7_1               | add | fabric | 0       |
+|     grp_fu_275_p2                                             |     |        | bit8_1               | add | fabric | 0       |
+|   + huffmanBytegenLL                                          | 0   |        |                      |     |        |         |
+|    + huffmanBytegenLL_Pipeline_ByteGen                        | 0   |        |                      |     |        |         |
+|      add_ln382_fu_2507_p2                                     |     |        | add_ln382            | add | fabric | 0       |
+|      counter_1_fu_2740_p2                                     |     |        | counter_1            | sub | fabric | 0       |
+|      counter_2_fu_2868_p2                                     |     |        | counter_2            | add | fabric | 0       |
+|   + discardBitStreamLL (call_ret29_discardBitStreamLL_fu_610) | 0   |        |                      |     |        |         |
+|     sub_ln74_fu_46_p2                                         |     |        | sub_ln74             | sub | fabric | 0       |
+|   + discardBitStreamLL (call_ret30_discardBitStreamLL_fu_618) | 0   |        |                      |     |        |         |
+|     sub_ln74_fu_46_p2                                         |     |        | sub_ln74             | sub | fabric | 0       |
+|   + huffmanDecoderLL_2_0_Pipeline_dyn_len_bits                | 0   |        |                      |     |        |         |
+|     dynamic_curInSize_2_fu_272_p2                             |     |        | dynamic_curInSize_2  | add | fabric | 0       |
+|     bitbuffer_fu_341_p2                                       |     |        | bitbuffer            | add | fabric | 0       |
+|     bits_cntr_fu_347_p2                                       |     |        | bits_cntr            | add | fabric | 0       |
+|     add_ln1069_fu_308_p2                                      |     |        | add_ln1069           | add | fabric | 0       |
+|    + discardBitStreamLL (call_ret_discardBitStreamLL_fu_213)  | 0   |        |                      |     |        |         |
+|      sub_ln74_fu_46_p2                                        |     |        | sub_ln74             | sub | fabric | 0       |
+|   + huffmanDecoderLL_2_0_Pipeline_VITIS_LOOP_1081_2           | 0   |        |                      |     |        |         |
+|     add_ln1081_fu_104_p2                                      |     |        | add_ln1081           | add | fabric | 0       |
+|   + code_generator_array_dyn_new                              | 0   |        |                      |     |        |         |
+|    + code_generator_array_dyn_new_Pipeline_cnt_lens           | 0   |        |                      |     |        |         |
+|      add_ln774_fu_391_p2                                      |     |        | add_ln774            | add | fabric | 0       |
+|      add_ln776_fu_397_p2                                      |     |        | add_ln776            | add | fabric | 0       |
+|      count_16_fu_537_p2                                       |     |        | count_16             | add | fabric | 0       |
+|    + code_generator_array_dyn_new_Pipeline_firstCode          | 0   |        |                      |     |        |         |
+|      add_ln787_fu_426_p2                                      |     |        | add_ln787            | add | fabric | 0       |
+|      add_ln787_1_fu_509_p2                                    |     |        | add_ln787_1          | add | fabric | 0       |
+|      add_ln785_fu_605_p2                                      |     |        | add_ln785            | add | fabric | 0       |
+|    + code_generator_array_dyn_new_Pipeline_CodeGen            | 0   |        |                      |     |        |         |
+|      i_5_fu_631_p2                                            |     |        | i_5                  | add | fabric | 0       |
+|      add_ln796_fu_637_p2                                      |     |        | add_ln796            | add | fabric | 0       |
+|      firstCode_29_fu_924_p2                                   |     |        | firstCode_29         | add | fabric | 0       |
+|   + byteGen                                                   | 0   |        |                      |     |        |         |
+|     add_ln60_fu_361_p2                                        |     |        | add_ln60             | add | fabric | 0       |
+|     add_ln62_fu_367_p2                                        |     |        | add_ln62             | add | fabric | 0       |
+|     add_i307_fu_377_p2                                        |     |        | add_i307             | add | fabric | 0       |
+|    + byteGen_Pipeline_bytegen                                 | 0   |        |                      |     |        |         |
+|      add_ln489_fu_966_p2                                      |     |        | add_ln489            | add | fabric | 0       |
+|      copy_5_fu_978_p2                                         |     |        | copy_5               | add | fabric | 0       |
+|      sub_ln495_fu_987_p2                                      |     |        | sub_ln495            | sub | fabric | 0       |
+|      sub_ln499_fu_1010_p2                                     |     |        | sub_ln499            | sub | fabric | 0       |
+|      dynamic_curInSize_5_fu_1270_p2                           |     |        | dynamic_curInSize_5  | add | fabric | 0       |
+|      copy_7_fu_1279_p2                                        |     |        | copy_7               | add | fabric | 0       |
+|      add_ln531_fu_1355_p2                                     |     |        | add_ln531            | add | fabric | 0       |
+|      add_ln533_fu_1361_p2                                     |     |        | add_ln533            | add | fabric | 0       |
+|   + discardBitStreamLL (grp_discardBitStreamLL_fu_626)        | 0   |        |                      |     |        |         |
+|     sub_ln74_fu_46_p2                                         |     |        | sub_ln74             | sub | fabric | 0       |
+|   + huffmanDecoderLL_2_0_Pipeline_strd_blk_cpy                | 0   |        |                      |     |        |         |
+|     i_2_fu_227_p2                                             |     |        | i_2                  | add | fabric | 0       |
+|     add_ln1041_fu_245_p2                                      |     |        | add_ln1041           | add | fabric | 0       |
+|     add_ln1046_fu_273_p2                                      |     |        | add_ln1046           | add | fabric | 0       |
+|  + decompressor_kernel_Pipeline_VITIS_LOOP_64_4               | 0   |        |                      |     |        |         |
+|    decompressed_count_2_fu_103_p2                             |     |        | decompressed_count_2 | add | fabric | 0       |
++---------------------------------------------------------------+-----+--------+----------------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++----------------------------------------+---------------+------+------+------+--------+----------------------+--------+---------+------------------+
+| Name                                   | Usage         | Type | BRAM | URAM | Pragma | Variable             | Impl   | Latency | Bitwidth, Depth, |
+|                                        |               |      |      |      |        |                      |        |         | Banks            |
++----------------------------------------+---------------+------+------+------+--------+----------------------+--------+---------+------------------+
+| + decompressor_kernel                  |               |      | 0    | 0    |        |                      |        |         |                  |
+|   huffman_input_stream_fifo_U          | fifo array    |      |      |      |        | huffman_input_stream | srl    | 0       | 16, 2, 1         |
+|   huffman_eos_stream_fifo_U            | fifo array    |      |      |      |        | huffman_eos_stream   | srl    | 0       | 1, 2, 1          |
+|   lz77_output_stream_fifo_U            | fifo array    |      |      |      |        | lz77_output_stream   | srl    | 0       | 16, 2, 1         |
+|  + huffmanDecoderLL_2_0_s              |               |      | 0    | 0    |        |                      |        |         |                  |
+|    dynamic_lens_U                      | ram_1p array  |      |      |      | yes    | dynamic_lens         | lutram | 1       | 5, 318, 1        |
+|    codeOffsets_U                       | ram_s2p array |      |      |      |        | codeOffsets          | auto   | 1       | 16, 15, 1        |
+|    codeOffsets_1_U                     | ram_s2p array |      |      |      |        | codeOffsets_1        | auto   | 1       | 16, 15, 1        |
+|    bl1Code_U                           | ram_1p array  |      |      |      | yes    | bl1Code              | lutram | 1       | 9, 2, 1          |
+|    bl1Code_1_U                         | ram_1p array  |      |      |      | yes    | bl1Code_1            | lutram | 1       | 9, 2, 1          |
+|    bl2Code_U                           | ram_1p array  |      |      |      | yes    | bl2Code              | lutram | 1       | 9, 4, 1          |
+|    bl2Code_1_U                         | ram_1p array  |      |      |      | yes    | bl2Code_1            | lutram | 1       | 9, 4, 1          |
+|    bl3Code_U                           | ram_1p array  |      |      |      | yes    | bl3Code              | lutram | 1       | 9, 8, 1          |
+|    bl3Code_1_U                         | ram_1p array  |      |      |      | yes    | bl3Code_1            | lutram | 1       | 9, 8, 1          |
+|    bl4Code_U                           | ram_1p array  |      |      |      | yes    | bl4Code              | lutram | 1       | 9, 16, 1         |
+|    bl4Code_1_U                         | ram_1p array  |      |      |      | yes    | bl4Code_1            | lutram | 1       | 9, 16, 1         |
+|    bl5Code_U                           | ram_1p array  |      |      |      | yes    | bl5Code              | lutram | 1       | 9, 32, 1         |
+|    bl5Code_1_U                         | ram_1p array  |      |      |      | yes    | bl5Code_1            | lutram | 1       | 9, 32, 1         |
+|    bl6Code_U                           | ram_1p array  |      |      |      | yes    | bl6Code              | lutram | 1       | 9, 64, 1         |
+|    bl6Code_1_U                         | ram_1p array  |      |      |      | yes    | bl6Code_1            | lutram | 1       | 9, 64, 1         |
+|    bl7Code_U                           | ram_1p array  |      |      |      | yes    | bl7Code              | lutram | 1       | 9, 128, 1        |
+|    bl7Code_1_U                         | ram_1p array  |      |      |      | yes    | bl7Code_1            | lutram | 1       | 9, 128, 1        |
+|    bl8Code_U                           | ram_1p array  |      |      |      | yes    | bl8Code              | lutram | 1       | 9, 256, 1        |
+|    bl8Code_1_U                         | ram_1p array  |      |      |      | yes    | bl8Code_1            | lutram | 1       | 9, 256, 1        |
+|    bl9Code_U                           | ram_1p array  |      |      |      | yes    | bl9Code              | lutram | 1       | 9, 256, 1        |
+|    bl9Code_1_U                         | ram_1p array  |      |      |      | yes    | bl9Code_1            | lutram | 1       | 9, 256, 1        |
+|    bl10Code_U                          | ram_1p array  |      |      |      | yes    | bl10Code             | lutram | 1       | 9, 256, 1        |
+|    bl10Code_1_U                        | ram_1p array  |      |      |      | yes    | bl10Code_1           | lutram | 1       | 9, 256, 1        |
+|    bl11Code_U                          | ram_1p array  |      |      |      | yes    | bl11Code             | lutram | 1       | 9, 256, 1        |
+|    bl11Code_1_U                        | ram_1p array  |      |      |      | yes    | bl11Code_1           | lutram | 1       | 9, 256, 1        |
+|    bl12Code_U                          | ram_1p array  |      |      |      | yes    | bl12Code             | lutram | 1       | 9, 256, 1        |
+|    bl12Code_1_U                        | ram_1p array  |      |      |      | yes    | bl12Code_1           | lutram | 1       | 9, 256, 1        |
+|    bl13Code_U                          | ram_1p array  |      |      |      | yes    | bl13Code             | lutram | 1       | 9, 256, 1        |
+|    bl13Code_1_U                        | ram_1p array  |      |      |      | yes    | bl13Code_1           | lutram | 1       | 9, 256, 1        |
+|    bl14Code_U                          | ram_1p array  |      |      |      | yes    | bl14Code             | lutram | 1       | 9, 256, 1        |
+|    bl14Code_1_U                        | ram_1p array  |      |      |      | yes    | bl14Code_1           | lutram | 1       | 9, 256, 1        |
+|    bl15Code_U                          | ram_1p array  |      |      |      | yes    | bl15Code             | lutram | 1       | 9, 256, 1        |
+|    bl15Code_1_U                        | ram_1p array  |      |      |      | yes    | bl15Code_1           | lutram | 1       | 9, 256, 1        |
+|    order_U                             | rom_1p        |      |      |      |        | order                | auto   | 1       | 5, 19, 1         |
+|   + huffmanBytegenLL                   |               |      | 0    | 0    |        |                      |        |         |                  |
+|    + huffmanBytegenLL_Pipeline_ByteGen |               |      | 0    | 0    |        |                      |        |         |                  |
+|      lext_U                            | rom_1p        |      |      |      |        | lext                 | auto   | 1       | 4, 32, 1         |
+|      dext_U                            | rom_1p        |      |      |      |        | dext                 | auto   | 1       | 4, 32, 1         |
++----------------------------------------+---------------+------+------+------+--------+----------------------+--------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+-----------------------------------------------------+----------------------------------------------------------------------------+
+| Type            | Options                                             | Location                                                                   |
++-----------------+-----------------------------------------------------+----------------------------------------------------------------------------+
+| inline          | off                                                 | ../work/cc/include/huffman_decoder.hpp:42 in loadbitstream                 |
+| inline          | off                                                 | ../work/cc/include/huffman_decoder.hpp:72 in discardbitstreamll            |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:79 in reg                           |
+| interface       | ap_ctrl_none port = return                          | ../work/cc/include/huffman_decoder.hpp:80 in reg                           |
+| inline          | off                                                 | ../work/cc/include/huffman_decoder.hpp:81 in reg                           |
+| inline          |                                                     | ../work/cc/include/huffman_decoder.hpp:94 in huffmanbytegenstatic          |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:110 in huffmanbytegenstatic         |
+| inline          |                                                     | ../work/cc/include/huffman_decoder.hpp:177 in huffmanbytegen               |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:197 in huffmanbytegen               |
+| array_partition | variable = current_bits complete dim = 0            | ../work/cc/include/huffman_decoder.hpp:305 in huffmanbytegenll             |
+| array_partition | variable = symbol complete dim = 0                  | ../work/cc/include/huffman_decoder.hpp:307 in huffmanbytegenll             |
+| array_partition | variable = lBitBuffer complete dim = 0              | ../work/cc/include/huffman_decoder.hpp:311 in huffmanbytegenll             |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:332 in huffmanbytegenll             |
+| unroll          |                                                     | ../work/cc/include/huffman_decoder.hpp:335 in huffmanbytegenll             |
+| unroll          |                                                     | ../work/cc/include/huffman_decoder.hpp:338 in huffmanbytegenll             |
+| unroll          |                                                     | ../work/cc/include/huffman_decoder.hpp:346 in huffmanbytegenll             |
+| array_partition | variable = symbol dim = 1 complete                  | ../work/cc/include/huffman_decoder.hpp:461 in bytegen                      |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:470 in bytegen                      |
+| unroll          |                                                     | ../work/cc/include/huffman_decoder.hpp:472 in bytegen                      |
+| inline          |                                                     | ../work/cc/include/huffman_decoder.hpp:556 in code_generator_array_dyn     |
+| array_partition | variable = count                                    | ../work/cc/include/huffman_decoder.hpp:584 in code_generator_array_dyn     |
+| array_partition | variable = offs                                     | ../work/cc/include/huffman_decoder.hpp:587 in code_generator_array_dyn     |
+| dependence      | false inter variable = codeBuffer                   | ../work/cc/include/huffman_decoder.hpp:590 in code_generator_array_dyn     |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:603 in code_generator_array_dyn     |
+| unroll          | FACTOR = 2                                          | ../work/cc/include/huffman_decoder.hpp:604 in code_generator_array_dyn     |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:614 in code_generator_array_dyn     |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:623 in code_generator_array_dyn     |
+| dependence      | false inter variable = codeBuffer                   | ../work/cc/include/huffman_decoder.hpp:628 in code_generator_array_dyn     |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:629 in code_generator_array_dyn     |
+| unroll          | FACTOR = 2                                          | ../work/cc/include/huffman_decoder.hpp:630 in code_generator_array_dyn     |
+| dependence      | false inter variable = nptr                         | ../work/cc/include/huffman_decoder.hpp:685 in code_generator_array_dyn     |
+| dependence      | false inter variable = nptr_extra                   | ../work/cc/include/huffman_decoder.hpp:686 in code_generator_array_dyn     |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:687 in code_generator_array_dyn     |
+| unroll          | FACTOR = 2                                          | ../work/cc/include/huffman_decoder.hpp:688 in code_generator_array_dyn     |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:732 in code_generator_array_dyn     |
+| unroll          | FACTOR = 2                                          | ../work/cc/include/huffman_decoder.hpp:733 in code_generator_array_dyn     |
+| array_partition | variable = count                                    | ../work/cc/include/huffman_decoder.hpp:771 in code_generator_array_dyn_new |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:775 in code_generator_array_dyn_new |
+| array_partition | variable = firstCode                                | ../work/cc/include/huffman_decoder.hpp:782 in code_generator_array_dyn_new |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:786 in code_generator_array_dyn_new |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:795 in code_generator_array_dyn_new |
+| bind_storage    | variable = dynamic_lens type = ram_1p impl = lutram | ../work/cc/include/huffman_decoder.hpp:895 in huffmandecoderll             |
+| array_partition | variable = codeOffsets dim = 1 complete             | ../work/cc/include/huffman_decoder.hpp:903 in huffmandecoderll             |
+| bind_storage    | variable = bl1Code type = ram_1p impl = lutram      | ../work/cc/include/huffman_decoder.hpp:919 in huffmandecoderll             |
+| array_partition | variable = bl1Code complete dim = 1                 | ../work/cc/include/huffman_decoder.hpp:920 in huffmandecoderll             |
+| bind_storage    | variable = bl2Code type = ram_1p impl = lutram      | ../work/cc/include/huffman_decoder.hpp:921 in huffmandecoderll             |
+| array_partition | variable = bl2Code complete dim = 1                 | ../work/cc/include/huffman_decoder.hpp:922 in huffmandecoderll             |
+| bind_storage    | variable = bl3Code type = ram_1p impl = lutram      | ../work/cc/include/huffman_decoder.hpp:923 in huffmandecoderll             |
+| array_partition | variable = bl3Code complete dim = 1                 | ../work/cc/include/huffman_decoder.hpp:924 in huffmandecoderll             |
+| bind_storage    | variable = bl4Code type = ram_1p impl = lutram      | ../work/cc/include/huffman_decoder.hpp:925 in huffmandecoderll             |
+| array_partition | variable = bl4Code complete dim = 1                 | ../work/cc/include/huffman_decoder.hpp:926 in huffmandecoderll             |
+| bind_storage    | variable = bl5Code type = ram_1p impl = lutram      | ../work/cc/include/huffman_decoder.hpp:927 in huffmandecoderll             |
+| array_partition | variable = bl5Code complete dim = 1                 | ../work/cc/include/huffman_decoder.hpp:928 in huffmandecoderll             |
+| bind_storage    | variable = bl6Code type = ram_1p impl = lutram      | ../work/cc/include/huffman_decoder.hpp:929 in huffmandecoderll             |
+| array_partition | variable = bl6Code complete dim = 1                 | ../work/cc/include/huffman_decoder.hpp:930 in huffmandecoderll             |
+| bind_storage    | variable = bl7Code type = ram_1p impl = lutram      | ../work/cc/include/huffman_decoder.hpp:931 in huffmandecoderll             |
+| array_partition | variable = bl7Code complete dim = 1                 | ../work/cc/include/huffman_decoder.hpp:932 in huffmandecoderll             |
+| bind_storage    | variable = bl8Code type = ram_1p impl = lutram      | ../work/cc/include/huffman_decoder.hpp:933 in huffmandecoderll             |
+| array_partition | variable = bl8Code complete dim = 1                 | ../work/cc/include/huffman_decoder.hpp:934 in huffmandecoderll             |
+| bind_storage    | variable = bl9Code type = ram_1p impl = lutram      | ../work/cc/include/huffman_decoder.hpp:935 in huffmandecoderll             |
+| array_partition | variable = bl9Code complete dim = 1                 | ../work/cc/include/huffman_decoder.hpp:936 in huffmandecoderll             |
+| bind_storage    | variable = bl10Code type = ram_1p impl = lutram     | ../work/cc/include/huffman_decoder.hpp:937 in huffmandecoderll             |
+| array_partition | variable = bl10Code complete dim = 1                | ../work/cc/include/huffman_decoder.hpp:938 in huffmandecoderll             |
+| bind_storage    | variable = bl11Code type = ram_1p impl = lutram     | ../work/cc/include/huffman_decoder.hpp:939 in huffmandecoderll             |
+| array_partition | variable = bl11Code complete dim = 1                | ../work/cc/include/huffman_decoder.hpp:940 in huffmandecoderll             |
+| bind_storage    | variable = bl12Code type = ram_1p impl = lutram     | ../work/cc/include/huffman_decoder.hpp:941 in huffmandecoderll             |
+| array_partition | variable = bl12Code complete dim = 1                | ../work/cc/include/huffman_decoder.hpp:942 in huffmandecoderll             |
+| bind_storage    | variable = bl13Code type = ram_1p impl = lutram     | ../work/cc/include/huffman_decoder.hpp:943 in huffmandecoderll             |
+| array_partition | variable = bl13Code complete dim = 1                | ../work/cc/include/huffman_decoder.hpp:944 in huffmandecoderll             |
+| bind_storage    | variable = bl14Code type = ram_1p impl = lutram     | ../work/cc/include/huffman_decoder.hpp:945 in huffmandecoderll             |
+| array_partition | variable = bl14Code complete dim = 1                | ../work/cc/include/huffman_decoder.hpp:946 in huffmandecoderll             |
+| bind_storage    | variable = bl15Code type = ram_1p impl = lutram     | ../work/cc/include/huffman_decoder.hpp:947 in huffmandecoderll             |
+| array_partition | variable = bl15Code complete dim = 1                | ../work/cc/include/huffman_decoder.hpp:948 in huffmandecoderll             |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:988 in huffmandecoderll             |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:1036 in huffmandecoderll            |
+| pipeline        | II = 2                                              | ../work/cc/include/huffman_decoder.hpp:1070 in huffmandecoderll            |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:1131 in huffmandecoderll            |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:1299 in huffmandecoder              |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:1339 in huffmandecoder              |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:1371 in huffmandecoder              |
+| pipeline        | II = 1                                              | ../work/cc/include/huffman_decoder.hpp:1393 in huffmandecoder              |
++-----------------+-----------------------------------------------------+----------------------------------------------------------------------------+
+
+

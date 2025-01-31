@@ -1,0 +1,164 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_decompressor_kernel_top glbl -Oenable_linking_all_libraries -prj decompressor_kernel.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_15 --lib ieee_proposed=./ieee_proposed -s decompressor_kernel 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_decompressor_kernel_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/AESL_autofifo_out_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_out_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/AESL_autofifo_out_eos.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_out_eos
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_decompressor_kernel_Pipeline_VITIS_LOOP_39_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_decompressor_kernel_Pipeline_VITIS_LOOP_39_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_loadBitStreamLL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_loadBitStreamLL
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_discardBitStreamLL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_discardBitStreamLL
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_Pipeline_read_fname.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_Pipeline_read_fname
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_Pipeline_VITIS_LOOP_1130_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_Pipeline_VITIS_LOOP_1130_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanBytegenLL_Pipeline_ByteGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanBytegenLL_Pipeline_ByteGen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanBytegenLL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanBytegenLL
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_Pipeline_dyn_len_bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_Pipeline_dyn_len_bits
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_Pipeline_VITIS_LOOP_1081_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_Pipeline_VITIS_LOOP_1081_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_code_generator_array_dyn_new_Pipeline_cnt_lens.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_code_generator_array_dyn_new_Pipeline_cnt_lens
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_code_generator_array_dyn_new_Pipeline_firstCode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_code_generator_array_dyn_new_Pipeline_firstCode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_code_generator_array_dyn_new_Pipeline_CodeGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_code_generator_array_dyn_new_Pipeline_CodeGen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_code_generator_array_dyn_new.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_code_generator_array_dyn_new
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_byteGen_Pipeline_bytegen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_byteGen_Pipeline_bytegen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_byteGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_byteGen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_Pipeline_strd_blk_cpy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_Pipeline_strd_blk_cpy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_Pipeline_consumeLeftOverData.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_Pipeline_consumeLeftOverData
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_decompressor_kernel_Pipeline_VITIS_LOOP_64_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_decompressor_kernel_Pipeline_VITIS_LOOP_64_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_decompressor_kernel_Pipeline_VITIS_LOOP_87_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_decompressor_kernel_Pipeline_VITIS_LOOP_87_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_sparsemux_31_4_9_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_sparsemux_31_4_9_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_sparsemux_31_4_5_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_sparsemux_31_4_5_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanBytegenLL_Pipeline_ByteGen_lext_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanBytegenLL_Pipeline_ByteGen_lext_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanBytegenLL_Pipeline_ByteGen_dext_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanBytegenLL_Pipeline_ByteGen_dext_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_sparsemux_33_4_9_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_sparsemux_33_4_9_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_sparsemux_31_4_15_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_sparsemux_31_4_15_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_sparsemux_15_3_5_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_sparsemux_15_3_5_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_s_order_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_s_order_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_s_dynamic_lens_RAM_1P_LUTRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_s_dynamic_lens_RAM_1P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_s_codeOffsets_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_s_codeOffsets_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_s_bl1Code_RAM_1P_LUTRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_s_bl1Code_RAM_1P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_s_bl2Code_RAM_1P_LUTRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_s_bl2Code_RAM_1P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_s_bl3Code_RAM_1P_LUTRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_s_bl3Code_RAM_1P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_s_bl4Code_RAM_1P_LUTRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_s_bl4Code_RAM_1P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_s_bl5Code_RAM_1P_LUTRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_s_bl5Code_RAM_1P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_s_bl6Code_RAM_1P_LUTRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_s_bl6Code_RAM_1P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_s_bl7Code_RAM_1P_LUTRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_s_bl7Code_RAM_1P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_huffmanDecoderLL_2_0_s_bl8Code_RAM_1P_LUTRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_huffmanDecoderLL_2_0_s_bl8Code_RAM_1P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_fifo_w16_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_fifo_w16_d2_S
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_fifo_w16_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_fifo_w1_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_fifo_w1_d2_S
+INFO: [VRFC 10-311] analyzing module decompressor_kernel_fifo_w1_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_fifo_w16_d2_S.v:46]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/sim/verilog/decompressor_kernel_fifo_w1_d2_S.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.decompressor_kernel_flow_control...
+Compiling module xil_defaultlib.decompressor_kernel_decompressor...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_loadBitStrea...
+Compiling module xil_defaultlib.decompressor_kernel_discardBitSt...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanByteg...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanByteg...
+Compiling module xil_defaultlib.decompressor_kernel_sparsemux_31...
+Compiling module xil_defaultlib.decompressor_kernel_sparsemux_31...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanByteg...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanByteg...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_sparsemux_33...
+Compiling module xil_defaultlib.decompressor_kernel_code_generat...
+Compiling module xil_defaultlib.decompressor_kernel_code_generat...
+Compiling module xil_defaultlib.decompressor_kernel_sparsemux_31...
+Compiling module xil_defaultlib.decompressor_kernel_code_generat...
+Compiling module xil_defaultlib.decompressor_kernel_code_generat...
+Compiling module xil_defaultlib.decompressor_kernel_sparsemux_15...
+Compiling module xil_defaultlib.decompressor_kernel_byteGen_Pipe...
+Compiling module xil_defaultlib.decompressor_kernel_byteGen
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_huffmanDecod...
+Compiling module xil_defaultlib.decompressor_kernel_decompressor...
+Compiling module xil_defaultlib.decompressor_kernel_decompressor...
+Compiling module xil_defaultlib.decompressor_kernel_fifo_w16_d2_...
+Compiling module xil_defaultlib.decompressor_kernel_fifo_w16_d2_...
+Compiling module xil_defaultlib.decompressor_kernel_fifo_w1_d2_S...
+Compiling module xil_defaultlib.decompressor_kernel_fifo_w1_d2_S
+Compiling module xil_defaultlib.decompressor_kernel
+Compiling module xil_defaultlib.AESL_autofifo_out_stream
+Compiling module xil_defaultlib.AESL_autofifo_out_eos
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=12)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=46)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.upc_loop_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_decompressor_kernel_top
+Compiling module work.glbl
+Built simulation snapshot decompressor_kernel
