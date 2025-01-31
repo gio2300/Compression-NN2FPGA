@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/giovannic/NN2FPGA-open/nn2fpga/DecompressorProject/solution1/./sim/autowrap/testbench/decompressor_kernel.cc_pre.cc.tb.cc
