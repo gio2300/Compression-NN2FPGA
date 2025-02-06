@@ -15,6 +15,15 @@
 #include "produce_stream_.hpp" //
 #include "master_to_comprstream.hpp"
 
+#define MULTIPLE_BYTES 8//
+#define LOW_OFFSET 1
+#define MAX_OFFSET (32 * 1024)
+#define HISTORY_SIZE MAX_OFFSET
+#define LL_MODEL false
+#define HUFFMAN_TYPE xf::compression::DYNAMIC
+#define OUT_BITWIDTH (MULTIPLE_BYTES * 8)
+
+
 void memory_management(
 	hls::stream<t_weights_stream> &i_data_weights,
 	hls::stream<t_net_const_13> s_net_const_13[9], 
@@ -220,25 +229,48 @@ uint8_t* buffer
 		
 	);
 
-typedef ap_uint<IN_BITWIDTH> in_t;
-hls::stream<in_t> inStream("inStream");
-hls::stream<bool> inEos("inEos");
+    const uint32_t strbSize = (OUT_BITWIDTH / 8);
+    typedef ap_uint<IN_BITWIDTH> in_t;
+    hls::stream<in_t> inStream("inStream");
+    hls::stream<bool> inEos("inEos");
+    hls::stream<ap_uint<OUT_BITWIDTH + strbSize>> outStream("decompressOut");
+    hls::stream<uint8_t> decompressedStream("decompressedStream");
+
 
 	master_to_comprstream <in_t,
 			      c_node_const_10_ow,
 			      c_node_const_10_oh,
 			      c_net_const_13_reuse>
-       	(
+    (
 		buffer, 
-// weights_ddr,	
- 	 s_net_const_13_init_flag,
-	        inEos,
+ 	    s_net_const_13_init_flag,
+	    inEos,
 		inStream
 	);
+     
+    const int c_decoderType = (int)HUFFMAN_TYPE;
+    xf::compression::details::inflateMultiByteCore<c_decoderType, MULTIPLE_BYTES,
+         xf::compression::FileFormat::BOTH,
+         LL_MODEL, HISTORY_SIZE>(inStream, inEos, outStream);
+	
+    produce_inflated_stream_ <
+		t_net_const_13,
+		c_node_const_10_ich,
+		c_node_const_10_och,
+		c_node_const_10_ow,
+		c_node_const_10_oh,
+		c_net_const_13_iw,
+		c_net_const_13_ih,
+		c_net_const_13_ops,
+		c_net_const_13_reuse,
+	    in_t	
+	> (
+            outStream,
+            decompressedStream
+	);
+
 
 	produce_stream_ <
-	//	t_net_const_13_st,
-	//	t_net_const_13_init,
 		t_net_const_13,
 		c_node_const_10_ich,
 		c_node_const_10_och,
@@ -250,10 +282,8 @@ hls::stream<bool> inEos("inEos");
 		c_net_const_13_reuse,
 	in_t	
 	> (
-		inStream,
-		inEos,
-	  //      nullptr, 
 		s_net_const_13_init_flag,
+        decompressedStream,
 		s_net_const_13
 	);
 
