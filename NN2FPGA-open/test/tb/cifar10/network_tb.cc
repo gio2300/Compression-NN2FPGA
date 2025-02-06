@@ -89,7 +89,7 @@ int main(int argc, char** argv) {
   std::cout << "Allocated " << CLASSES * c_batch << " ap_uint<8> for output results." << std::endl;
 
 //uint8_t weightscompr[386]; //
-uint8_t* buffer;
+uint8_t* buffer = nullptr;
 
 #ifndef CSIM
         if (argc < 3) {
