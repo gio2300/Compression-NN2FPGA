@@ -67,7 +67,7 @@ config_interface -m_axi_max_widen_bitwidth 128
 config_interface -m_axi_alignment_byte_size 16
 config_interface -m_axi_max_read_burst_length 256
 config_interface -m_axi_num_read_outstanding 1
-config_interface -m_axi_latency 50
+config_interface -m_axi_latency 10
 # config_compile -pipeline_style flp
 # MOD done to reduce LUT usage with a small performance degradation
 config_compile -pipeline_style stp -enable_auto_rewind=false
